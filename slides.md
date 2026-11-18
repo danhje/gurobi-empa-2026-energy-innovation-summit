@@ -20,6 +20,7 @@
 - 222 participants (TSOs, utilities, BSPs, traders)
 - Framing: Volatility requires optimization. Opportunity, not just something to manage / tame.
 - Why? Need for fast decisions (e.g. dispatch).
+- Day 1: Energy first. Day 2: Optimization first.
 
 </div>
 <div>
