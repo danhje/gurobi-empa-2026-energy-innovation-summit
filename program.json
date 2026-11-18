@@ -6,14 +6,6 @@
       "label": "Program day 1",
       "items": [
         {
-          "id": "d1-registration",
-          "time": "08:00–09:00",
-          "start": "08:00",
-          "end": "09:00",
-          "title": "Registration",
-          "kind": "break"
-        },
-        {
           "id": "d1-welcome",
           "time": "09:00–09:15",
           "start": "09:00",

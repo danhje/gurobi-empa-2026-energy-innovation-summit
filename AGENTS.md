@@ -15,3 +15,5 @@
 
 - The summit program lives in `program.json` and is the single source of truth for the left-hand overview. It was built from the Obsidian note `Energy innovation summit in Zurich 2026.md`; change the JSON when the program changes, don't invent sessions. A `notes` field, when present, is the linked notes page name for later mapping — not shown in the sidebar.
 - Tag the first slide of a session with `<!-- .slide: data-session="item-id" -->`. Later slides inherit the most recent preceding `data-session` in document order (horizontal and vertical). `data-session="none"` or class `no-program` hides the sidebar. It is also hidden on `.title-slide` unless that slide has its own `data-session`. The sidebar lists both days at once, titles only; toggle it with `T`.
+
+- Photographs from the notes live in `assets/img/` as web-optimised JPEGs (about 1600px on the long side, quality around 82, EXIF rotation applied, metadata stripped). Don't commit the original multi-MB files from the vault. In `slides.md`, a `.cols.cols-media` block puts text on the left and an `<img class="slide-image">` on the right.

@@ -1,89 +1,136 @@
-<!-- .slide: class="title-slide" -->
+<!-- .slide: class="talk-title-slide" data-session="d1-welcome" -->
 
 <p class="eyebrow">Welcome</p>
 
-# Finding value in volatility
+# Welcome: Context Setting, Housekeeping, and Gurobi and Empa Team Presentation
 
-<p class="subtitle">Empa welcome note</p>
-
-<p class="meta">Day 1 · Tue 17 Nov</p>
-
-Note:
-Placeholder deck only — scaffolding, theme, and hosting. Speaker notes open with the S key.
-
----
-
-<!-- .slide: class="content-slide" data-session="d1-tso-dso" -->
-
-<p class="eyebrow">Agenda</p>
-
-## Finding value in volatility
-
-- Energy systems are more volatile than they used to be <!-- .element: class="fragment" -->
-- That volatility is a planning problem, and an opportunity <!-- .element: class="fragment" -->
-- Optimisation helps turn uncertainty into decisions <!-- .element: class="fragment" -->
-- Today: models, methods, and a few open questions <!-- .element: class="fragment" -->
+<p class="speakers">
+Tim Reintgen, Gurobi, Account Manager Power &amp; Utilities EME<br>
+Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
+</p>
 
 ---
 
 <!-- .slide: class="content-slide" -->
 
-<p class="eyebrow">Context</p>
+- Need to adapt to changes.
+- Interdisciplinary.
 
-## Two lenses on the same problem
+---
 
-<div class="cols">
+<!-- .slide: class="talk-title-slide" data-session="d1-tso-dso" -->
+
+<div class="cols cols-media">
 <div>
 
-### The system
+<p class="eyebrow">Keynote</p>
 
-- Variable renewable supply
-- Flexible demand and storage
-- Networks that couple heat, power, and mobility
+# TSO-DSO Coordination: Unlocking Grid and System Value from Distributed Flexibility
+
+<p class="speakers">
+Raphael Wu, Swissgrid, Principal Specialist Market Strategy
+</p>
 
 </div>
 <div>
 
-### The decisions
-
-- When to generate, store, or shift
-- How to value flexibility under uncertainty
-- Where operational constraints bind
+<img class="slide-image" src="assets/img/img-0708.jpg" alt="Photograph of the keynote title in the auditorium.">
 
 </div>
 </div>
 
 ---
 
-<!-- .slide: class="content-slide" data-session="d1-surrogate-models" -->
+<!-- .slide: class="content-slide" -->
 
-<p class="eyebrow">Methods</p>
-
-## A compact formulation
-
-A simple economic-dispatch sketch, with a power-balance constraint:
-
-$$
-\min_{g,s} \quad c^\top g
-\quad \text{s.t.} \quad
-\sum_i g_i + s^{\text{out}} - s^{\text{in}} = d,
-\quad g^{\min} \le g \le g^{\max}
-$$
-
-```python
-# Placeholder: economic dispatch with storage
-model.addConstr(
-    g.sum() + s_out - s_in == demand,
-    name="power_balance",
-)
-```
+Flexibility increasingly comes from the distribution grid.
 
 ---
 
-<!-- .slide: class="title-slide closing-slide" -->
+<!-- .slide: class="content-slide" -->
 
-<p class="eyebrow">Thank you</p>
+<div class="cols cols-media cols-media-portrait">
+<div>
 
-# Let's continue the conversation
+How to optimise across these use cases?
 
-<p class="subtitle">Gurobi × Empa · Energy Innovation Summit 2026</p>
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-18.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
+<!-- .slide: class="content-slide" -->
+
+<div class="cols cols-media">
+<div>
+
+- Project where DSO, TSO and BSPs look for opportunities to cooperate.
+- Solution takes constraints both from DSO and TSO into account.
+- DSO main buyers of flexibility in Switzerland.
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-20.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
+<!-- .slide: class="content-slide" -->
+
+- DSOs provide sensitivities at the transformer where they connect to the transmission grid.
+- Quite classical optimisation, but with a little extra aggregation of local flexibility.
+- 2 stage. What is not used locally goes on to a larger market where Swissgrid trades.
+
+---
+
+<!-- .slide: class="content-slide" -->
+
+<div class="cols cols-media">
+<div>
+
+Have working groups!
+
+<p class="eyebrow">Questions</p>
+
+- Do DSOs have access to mFRR EAM in Norway? Do they use other, more local markets?
+- Is this mFRR, aFRR or something else? → Just like tertiary, but something slightly different.
+- Are DSOs already making use of flexibility?
+- Talks about Statnett's variant. More one-way.
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/img-0710.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
+<!-- .slide: class="content-slide" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">A completely different project</p>
+
+### Questions
+
+- Tertiary reserves?
+- Said "control energy". For congestion management purposes or balance.
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-21.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
