@@ -575,13 +575,17 @@ body.program-sidebar-visible .reveal .slides section {
 }
 
 
-/* Problem / Solution boxes on talk slides */
+/* Problem / Solution grouping on talk slides.
+   Left honey accent only. A full rounded border still reads as a dark
+   filled panel against the espresso-to-amber gradient, even when the
+   box background is fully transparent. */
 .reveal .info-box {
-  background: none;
-  border: 1px solid rgba(201, 174, 146, 0.28);
+  background: transparent;
+  box-shadow: none;
+  border: none;
   border-left: 3px solid var(--honey);
-  border-radius: 8px;
-  padding: 0.45em 0.7em 0.4em;
+  border-radius: 0;
+  padding: 0.15em 0 0.2em 0.7em;
   margin: 0 0 0.55em;
 }
 
