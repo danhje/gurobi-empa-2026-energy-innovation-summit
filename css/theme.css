@@ -54,7 +54,7 @@ body {
   z-index: 0;
   background:
     linear-gradient(
-      80deg,
+      70deg,
       rgba(42, 26, 16, 0.15) 0%,
       rgba(74, 46, 28, 0.5) 45%,
       rgba(122, 74, 42, 0.85) 65%,
@@ -122,7 +122,11 @@ body {
 }
 
 .reveal .slides section > * {
-  max-width: 55%;
+  max-width: 86%;
+}
+
+.reveal .slides section.title-slide > * {
+  max-width: 70%;
 }
 
 .reveal .slides section > .cols,
@@ -130,7 +134,7 @@ body {
 .reveal .slides section > .katex-display,
 .reveal .slides section > p:has(.katex-display),
 .reveal .slides section > .stretch {
-  max-width: 62%;
+  max-width: 86%;
 }
 
 .reveal h1,
@@ -153,7 +157,7 @@ body {
   font-size: 2.35em;
   font-weight: 600;
   line-height: 1.08;
-  max-width: 14ch;
+  max-width: 16ch;
 }
 
 .reveal h2 {
@@ -249,7 +253,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 3.2rem;
   margin-top: 0.2em;
-  max-width: 62%;
+  max-width: 86%;
 }
 
 .reveal .cols > div {
@@ -262,7 +266,7 @@ body {
 
 .reveal pre {
   width: 100%;
-  max-width: 62%;
+  max-width: 86%;
   margin: 0.9em 0 0;
   box-shadow: none;
   font-size: 0.48em;
@@ -270,7 +274,7 @@ body {
 
 .reveal pre code {
   font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  background: rgba(22, 13, 8, 0.86);
+  background: rgba(22, 13, 8, 0.78);
   border: 1px solid rgba(168, 96, 42, 0.35);
   color: var(--cream);
   padding: 1.15em 1.3em;

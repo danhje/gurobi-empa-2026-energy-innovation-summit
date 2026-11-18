@@ -35,7 +35,7 @@ Slide content lives in [`slides.md`](slides.md). It is ordinary Markdown, with a
 - `<!-- .slide: class="title-slide" -->` attaches a class to the whole slide
 - HTML is allowed when you need a layout that Markdown cannot express (for example the two-column `.cols` block)
 
-The theme and global background are in [`css/theme.css`](css/theme.css). The background is a fixed 16:9 HTML/CSS layer (no images) that does not change between slides: an espresso base (`#160D08`) with an 80° linear gradient that builds toward the top-right through dark roast, walnut, cinnamon, copper, burnt orange, and amber, never fading below a 15% floor on the left. Four overlapping espresso rectangles at 16% opacity are anchored to the bottom-right corner and form a staircase.
+The theme and global background are in [`css/theme.css`](css/theme.css). The background is a fixed 16:9 HTML/CSS layer (no images) that does not change between slides: an espresso base (`#160D08`) with a 70° linear gradient that builds toward the top-right through dark roast, walnut, cinnamon, copper, burnt orange, and amber, never fading below a 15% floor on the left. Four overlapping espresso rectangles at 16% opacity are anchored to the bottom-right corner and form a staircase.
 
 Presentation chrome (16:9 at 1920×1080, fade transitions, slide numbers, hash URLs, plugins) is configured in [`index.html`](index.html).
 
