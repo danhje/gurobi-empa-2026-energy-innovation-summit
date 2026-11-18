@@ -1,3 +1,36 @@
+<!-- .slide: class="title-slide" data-session="none" -->
+
+# Notes from the Energy Innovation Summit 2026
+
+<p class="subtitle">Daniel Hjertholm</p>
+
+---
+
+<!-- .slide: class="content-slide intro-slide" data-session="none" -->
+
+<div class="cols cols-media cols-media-portrait">
+<div>
+
+<p class="eyebrow">General</p>
+
+## Energy Innovation Summit 2026
+
+- Organized by Gurobi and Empa (The Swiss Federal Laboratories for Materials Science and Technology)
+- Focus on optimization utilized on energy systems
+- 222 participants (TSOs, utilities, BSPs, traders)
+- Framing: Volatility requires optimization. Opportunity, not just something to manage / tame.
+- Why? Need for fast decisions (e.g. dispatch).
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/img-0706.jpg" alt="Photograph of a banner in the auditorium.">
+
+</div>
+</div>
+
+---
+
 <!-- .slide: class="talk-title-slide" data-session="d1-welcome" -->
 
 <p class="eyebrow">Welcome</p>

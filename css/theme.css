@@ -556,6 +556,21 @@ body.program-sidebar-visible .reveal .slides section {
   margin-top: 0.9em;
 }
 
+
+/* Unlinked intro slide: slightly tighter type so five points sit beside a portrait photo. */
+.reveal .intro-slide {
+  font-size: 0.82em;
+}
+
+.reveal .intro-slide h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.55em;
+}
+
+.reveal .intro-slide .cols.cols-media-portrait {
+  grid-template-columns: minmax(0, 55fr) minmax(0, 45fr);
+}
+
 /* Portrait screens (phones): hide the program sidebar and drop its gutter. */
 @media (orientation: portrait) {
   .program-frame {
