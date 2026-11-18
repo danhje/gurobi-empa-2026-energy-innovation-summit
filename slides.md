@@ -17,7 +17,7 @@
 
 - Organized by Gurobi and Empa (The Swiss Federal Laboratories for Materials Science and Technology)
 - Focus on optimization utilized on energy systems
-- 222 participants (TSOs, utilities, BSPs, traders)
+- 222 attendees (TSOs, utilities, BSPs, traders)
 - Framing: Volatility requires optimization. Opportunity, not just something to manage / tame.
 - Why? Need for fast decisions (e.g. dispatch).
 - Day 1: Energy first. Day 2: Optimization first.
@@ -165,6 +165,75 @@ Have working groups!
 <div>
 
 <img class="slide-image" src="assets/img/image-21.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
+
+<!-- .slide: class="content-slide surrogate-slide" data-session="d1-surrogate-models" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">Technology Layer</p>
+
+## Embedded Surrogate Models for Real-Time Optimization of Industrial Energy Systems
+
+<div class="info-box">
+
+### Problem
+
+- Optimize a larger plant / industrial site combining energy sources (CHP)
+- Complex relationships: steam, heat, power generation, fuel constraints, emission limits, etc.
+- Continuous optimal setpoints (fuel cost, electricity cost, steam demand, CO2 costs)
+- All modeled in a thermodynamic simulator
+- But: simulation too slow (a few seconds) for an optimization loop
+
+</div>
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-27.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
+<!-- .slide: class="content-slide surrogate-slide" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">Technology Layer</p>
+
+<div class="info-box">
+
+### Solution
+
+- Train neural nets on each modeled component, from simulator-generated synthetic data (surrogate model)
+- With ReLU, the NN is piecewise linear
+- Turn model into constraints in an optimization model
+- Plant setpoints (CHP load, boiler operation, grid import / export) → decision variables
+- Add business constraints (CO2 emissions, etc.)
+- Add objective (maximize electricity revenue, minimize CO2 costs, etc.)
+- Solve!
+
+Free side effects:
+
+- Other uses. Seconds → milliseconds. As accurate as the simulation
+- Can be tweaked when real equipment drifts
+- Anomaly detection
+
+</div>
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-27.jpg" alt="Photograph of a slide projected during the talk.">
 
 </div>
 </div>
