@@ -8,6 +8,7 @@
   - `<!-- .slide: class="title-slide" -->` gives the left-weighted title layout. Pair it with `<p class="eyebrow">`, `# Title`, `<p class="subtitle">` and `<p class="meta">`.
   - `<div class="cols">` with two child `<div>`s makes a two-column layout. Leave blank lines inside the divs so the Markdown still renders.
   - Code blocks have a semi-transparent espresso background (`rgba(22, 13, 8, 0.78)`) so the background shows through. Keep that alpha roughly where it is.
+  - Shaded backgrounds are for code blocks only. Don't put a filled or shaded background on text boxes, cards, or other slide content. A border or similar unfilled grouping is fine. The global espresso-and-amber deck background is separate and should not be changed unless asked.
   - Maths: use `$$ … $$` or `$ … $`, never wrap it in backticks (KaTeX skips code spans).
 - Text may extend into the brighter right-hand area. Check legibility rather than hard-capping width.
 - reveal.js 5.2.1 is vendored in `vendor/`. Keep it local rather than switching to a CDN. KaTeX is pinned via `katex.version` in `index.html`.

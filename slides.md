@@ -222,7 +222,37 @@ Have working groups!
 - Add objective (maximize electricity revenue, minimize CO2 costs, etc.)
 - Solve!
 
-Free side effects:
+```
+Simulation ---> Neural nets ---> Physical constraints --->
+  optimization of setpoints
+
+Business constraints (ascii arrow pointing at optimization of setpoints)
+
+Business objectives (ascii arrow pointing at optimization of setpoints)
+```
+
+</div>
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-27.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
+<!-- .slide: class="content-slide surrogate-slide" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">Technology Layer</p>
+
+<div class="info-box">
+
+### Free side effects
 
 - Other uses. Seconds → milliseconds. As accurate as the simulation
 - Can be tweaked when real equipment drifts

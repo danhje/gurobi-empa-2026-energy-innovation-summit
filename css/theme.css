@@ -546,7 +546,7 @@ body.program-sidebar-visible .reveal .slides section {
   object-fit: contain;
   border-radius: 8px;
   border: 1px solid rgba(201, 174, 146, 0.22);
-  background: rgba(22, 13, 8, 0.28);
+  background: none;
 }
 
 .reveal .cols.cols-media > div:has(> .slide-image) {
@@ -577,8 +577,9 @@ body.program-sidebar-visible .reveal .slides section {
 
 /* Problem / Solution boxes on talk slides */
 .reveal .info-box {
-  background: rgba(22, 13, 8, 0.45);
-  border: 1px solid rgba(201, 174, 146, 0.22);
+  background: none;
+  border: 1px solid rgba(201, 174, 146, 0.28);
+  border-left: 3px solid var(--honey);
   border-radius: 8px;
   padding: 0.45em 0.7em 0.4em;
   margin: 0 0 0.55em;
@@ -599,6 +600,13 @@ body.program-sidebar-visible .reveal .slides section {
 .reveal .info-box li {
   line-height: 1.28;
   margin: 0 0 0.22em;
+}
+
+.reveal .info-box pre,
+.reveal .cols pre {
+  max-width: 100%;
+  width: 100%;
+  margin: 0.55em 0 0;
 }
 
 .reveal .info-box p {
