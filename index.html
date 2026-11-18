@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy Innovation Summit 2026 · Gurobi × Empa</title>
+    <meta
+      name="description"
+      content="Slides for the Gurobi × Empa Energy Innovation Summit 2026."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="vendor/reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="vendor/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+  <body>
+    <div class="deck-bg" aria-hidden="true">
+      <div class="deck-bg__wash"></div>
+      <div class="deck-bg__bars">
+        <span class="band band-v band-v1"></span>
+        <span class="band band-v band-v2"></span>
+        <span class="band band-v band-v3"></span>
+        <span class="band band-v band-v4"></span>
+        <span class="band band-v band-v5"></span>
+        <span class="band band-v band-v6"></span>
+        <span class="band band-v band-v7"></span>
+        <span class="band band-v band-v8"></span>
+        <span class="band band-h band-h1"></span>
+        <span class="band band-h band-h2"></span>
+        <span class="band band-h band-h3"></span>
+        <span class="band band-h band-h4"></span>
+        <span class="band band-h band-h5"></span>
+        <span class="band band-h band-h6"></span>
+        <span class="band band-h band-h7"></span>
+        <span class="block block-a"></span>
+        <span class="block block-b"></span>
+        <span class="block block-c"></span>
+      </div>
+      <div class="deck-bg__glow"></div>
+    </div>
+
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown="slides.md"
+          data-separator="^---$"
+          data-separator-vertical="^--$"
+          data-separator-notes="^Note:"
+        ></section>
+      </div>
+    </div>
+
+    <script src="vendor/reveal.js/dist/reveal.js"></script>
+    <script src="vendor/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="vendor/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="vendor/reveal.js/plugin/notes/notes.js"></script>
+    <script src="vendor/reveal.js/plugin/math/math.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+        width: 1920,
+        height: 1080,
+        margin: 0.08,
+        minScale: 0.2,
+        maxScale: 2.0,
+        center: true,
+        transition: "fade",
+        backgroundTransition: "none",
+        katex: { version: "0.16.22" },
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+      });
+    </script>
+  </body>
+</html>

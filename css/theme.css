@@ -1,0 +1,550 @@
+/**
+ * Custom reveal.js theme for the Gurobi × Empa Energy Innovation Summit 2026.
+ *
+ * Global background: very dark brown, almost black, with irregular vertical
+ * and horizontal bars that fade in toward the right in burnt orange, amber,
+ * rust, and deep brown. Pure HTML/CSS — no images. The background is fixed
+ * on the viewport so it stays put across slide transitions.
+ */
+
+:root {
+  --bg-0: #0c0704;
+  --bg-1: #120905;
+  --bg-2: #1a0c07;
+  --bg-3: #24100a;
+  --ink: #f5ece4;
+  --ink-muted: #c9b8aa;
+  --ink-soft: #9a8778;
+  --accent: #ff8a2a;
+  --accent-hot: #ffb25a;
+  --accent-deep: #c45a1a;
+  --brown-deep: #3a1c0e;
+  --brown-mid: #5a2a12;
+  --rust: #a84818;
+  --amber: #e8902a;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Global background (fixed; does not change with slides)                     */
+/* -------------------------------------------------------------------------- */
+
+html,
+body {
+  background: var(--bg-0);
+  overflow: hidden;
+}
+
+.reveal,
+.reveal-viewport,
+.reveal .slides,
+.reveal .slide-background,
+.reveal .slide-backgrounds,
+.reveal .backgrounds {
+  background: transparent !important;
+}
+
+.deck-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: var(--bg-0);
+}
+
+/* Soft left-to-right warmth plus a glow on the right edge. */
+.deck-bg__wash {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 48% 80% at 100% 42%, rgba(255, 122, 28, 0.26), transparent 68%),
+    radial-gradient(ellipse 36% 46% at 92% 92%, rgba(140, 48, 12, 0.28), transparent 72%),
+    radial-gradient(ellipse 28% 36% at 80% 8%, rgba(232, 144, 42, 0.10), transparent 70%),
+    linear-gradient(
+      to right,
+      #0c0704 0%,
+      #100805 38%,
+      #160a06 62%,
+      #1e0e08 82%,
+      #2a140a 100%
+    );
+}
+
+/* Bars and blocks only become visible toward the right. */
+.deck-bg__bars {
+  position: absolute;
+  inset: 0;
+  filter: blur(5px);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 32%,
+    rgba(0, 0, 0, 0.08) 46%,
+    rgba(0, 0, 0, 0.45) 62%,
+    rgba(0, 0, 0, 0.85) 80%,
+    #000 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 32%,
+    rgba(0, 0, 0, 0.08) 46%,
+    rgba(0, 0, 0, 0.45) 62%,
+    rgba(0, 0, 0, 0.85) 80%,
+    #000 100%
+  );
+}
+
+.band,
+.block {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+/*
+ * Fewer, larger bands that do not all span the full viewport, so crossings
+ * feel like overlapping panels rather than a regular tartan grid.
+ */
+.band-v1 {
+  top: 0;
+  left: 56%;
+  width: 5.5%;
+  height: 100%;
+  background: #2a140c;
+  opacity: 0.62;
+}
+
+.band-v2 {
+  top: 0;
+  left: 66.5%;
+  width: 1.7%;
+  height: 72%;
+  background: var(--accent);
+  opacity: 0.4;
+}
+
+.band-v3 {
+  top: 18%;
+  left: 73%;
+  width: 7.2%;
+  height: 82%;
+  background: #3a1a0c;
+  opacity: 0.72;
+}
+
+.band-v4 {
+  top: 0;
+  left: 84.5%;
+  width: 2.2%;
+  height: 100%;
+  background: var(--accent-hot);
+  opacity: 0.36;
+}
+
+.band-v5 {
+  top: 0;
+  left: 91.5%;
+  width: 8.5%;
+  height: 100%;
+  background: #4a2410;
+  opacity: 0.55;
+}
+
+.band-v6 {
+  top: 42%;
+  left: 80.5%;
+  width: 1.1%;
+  height: 58%;
+  background: var(--amber);
+  opacity: 0.5;
+}
+
+.band-v7 {
+  top: 8%;
+  left: 61.8%;
+  width: 2.4%;
+  height: 46%;
+  background: var(--accent-deep);
+  opacity: 0.34;
+}
+
+.band-v8 {
+  top: 0;
+  left: 97.2%;
+  width: 2.8%;
+  height: 100%;
+  background: var(--rust);
+  opacity: 0.42;
+}
+
+.band-h1 {
+  top: 0;
+  left: 48%;
+  right: 0;
+  height: 11%;
+  background: #1a0c08;
+  opacity: 0.5;
+}
+
+.band-h2 {
+  top: 16%;
+  left: 62%;
+  width: 38%;
+  height: 3.2%;
+  background: var(--accent);
+  opacity: 0.32;
+}
+
+.band-h3 {
+  top: 28%;
+  left: 54%;
+  right: 0;
+  height: 14%;
+  background: #2c140a;
+  opacity: 0.48;
+}
+
+.band-h4 {
+  top: 51%;
+  left: 70%;
+  width: 30%;
+  height: 2%;
+  background: var(--amber);
+  opacity: 0.4;
+}
+
+.band-h5 {
+  top: 62%;
+  left: 58%;
+  right: 0;
+  height: 16%;
+  background: #24120a;
+  opacity: 0.58;
+}
+
+.band-h6 {
+  top: 84%;
+  left: 72%;
+  width: 28%;
+  height: 4.5%;
+  background: var(--accent-deep);
+  opacity: 0.36;
+}
+
+.band-h7 {
+  top: 91%;
+  left: 50%;
+  right: 0;
+  height: 9%;
+  background: #160a06;
+  opacity: 0.65;
+}
+
+.block-a {
+  top: 6%;
+  left: 79%;
+  width: 18%;
+  height: 26%;
+  background: linear-gradient(160deg, rgba(255, 138, 42, 0.38), rgba(90, 32, 10, 0.12));
+  opacity: 0.9;
+}
+
+.block-b {
+  top: 46%;
+  left: 67%;
+  width: 24%;
+  height: 20%;
+  background: linear-gradient(200deg, rgba(168, 72, 24, 0.4), rgba(40, 16, 8, 0.12));
+  opacity: 0.8;
+}
+
+.block-c {
+  top: 68%;
+  left: 87%;
+  width: 13%;
+  height: 28%;
+  background: linear-gradient(20deg, rgba(255, 178, 90, 0.3), rgba(60, 24, 10, 0.2));
+  opacity: 0.85;
+}
+
+/* Extra warmth blooming off the right edge, above the bars. */
+.deck-bg__glow {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 28% 70% at 100% 50%, rgba(255, 138, 42, 0.16), transparent 70%),
+    linear-gradient(to left, rgba(255, 120, 30, 0.08), transparent 22%);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Reveal chrome                                                              */
+/* -------------------------------------------------------------------------- */
+
+.reveal {
+  color: var(--ink);
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.reveal ::selection {
+  background: rgba(255, 138, 42, 0.35);
+  color: var(--ink);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  text-align: left;
+  color: var(--ink);
+}
+
+.reveal .slides section > * {
+  max-width: 62%;
+}
+
+.reveal .slides section > .cols,
+.reveal .slides section > pre,
+.reveal .slides section > .katex-display,
+.reveal .slides section > p:has(.katex-display),
+.reveal .slides section > .stretch {
+  max-width: 78%;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4 {
+  font-family: Poppins, Inter, sans-serif;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: none;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 0.4em;
+  text-shadow: none;
+}
+
+.reveal h1 {
+  font-size: 2.35em;
+  font-weight: 700;
+  line-height: 1.08;
+  max-width: 16ch;
+}
+
+.reveal h2 {
+  font-size: 1.55em;
+  margin-bottom: 0.7em;
+}
+
+.reveal h3 {
+  font-family: Poppins, Inter, sans-serif;
+  font-size: 0.72em;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.55em;
+}
+
+.eyebrow {
+  font-family: Poppins, Inter, sans-serif;
+  font-size: 0.42em;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 1.15em;
+}
+
+.subtitle {
+  font-family: Inter, sans-serif;
+  font-size: 0.72em;
+  font-weight: 400;
+  color: var(--ink-muted);
+  margin: 0.85em 0 0;
+  letter-spacing: 0.01em;
+}
+
+.reveal p,
+.reveal li {
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.reveal p {
+  margin: 0 0 0.6em;
+}
+
+.reveal a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 138, 42, 0.4);
+}
+
+.reveal a:hover {
+  color: var(--accent-hot);
+}
+
+.reveal ul {
+  list-style: none;
+  margin: 0.2em 0 0;
+  padding: 0;
+}
+
+.reveal ul li {
+  position: relative;
+  padding-left: 1.05em;
+  margin: 0 0 0.55em;
+}
+
+.reveal ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 0.38em;
+  height: 0.38em;
+  background: var(--accent);
+}
+
+.reveal ol {
+  margin: 0.2em 0 0 1.15em;
+}
+
+.reveal .cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  margin-top: 0.2em;
+  max-width: 78%;
+}
+
+.reveal .cols > div {
+  min-width: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Code & maths                                                               */
+/* -------------------------------------------------------------------------- */
+
+.reveal pre {
+  width: 100%;
+  max-width: 78%;
+  margin: 0.9em 0 0;
+  box-shadow: none;
+  font-size: 0.48em;
+}
+
+.reveal pre code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  background: rgba(12, 7, 4, 0.82);
+  border: 1px solid rgba(255, 138, 42, 0.22);
+  color: var(--ink);
+  padding: 1.15em 1.3em;
+  max-height: none;
+  line-height: 1.55;
+  white-space: pre;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Warm highlight.js tokens, used without a stock theme stylesheet. */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-built_in {
+  color: var(--accent);
+}
+
+.hljs-string,
+.hljs-attr {
+  color: #ffc07a;
+}
+
+.hljs-comment {
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.hljs-number,
+.hljs-literal {
+  color: #e8902a;
+}
+
+.hljs-title,
+.hljs-function .hljs-title,
+.hljs-params {
+  color: var(--ink);
+}
+
+.hljs-name,
+.hljs-type {
+  color: #ffb25a;
+}
+
+.reveal .math,
+.reveal .katex,
+.reveal .mjx-chtml {
+  color: var(--ink);
+}
+
+.reveal .katex {
+  font-size: 1.05em;
+}
+
+.reveal .katex-display,
+.reveal .katex-display > .katex {
+  margin: 0.8em 0 0.4em;
+  text-align: left !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Title / closing layout                                                     */
+/* -------------------------------------------------------------------------- */
+
+.reveal .title-slide h1 {
+  margin-top: 0;
+}
+
+.reveal .title-slide {
+  /* Keep title typography on the calm left half. */
+}
+
+/* -------------------------------------------------------------------------- */
+/* Controls, progress, slide number                                           */
+/* -------------------------------------------------------------------------- */
+
+.reveal .progress {
+  height: 3px;
+  color: var(--accent);
+  background: rgba(245, 236, 228, 0.08);
+}
+
+.reveal .controls {
+  color: var(--accent);
+}
+
+.reveal .slide-number {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  background: rgba(12, 7, 4, 0.62);
+  color: var(--ink-muted);
+  right: 18px;
+  bottom: 16px;
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+
+.reveal .slide-number a {
+  color: inherit;
+  border: 0;
+}
+
+/* Hide the help overlay's default clash with our palette reasonably. */
+.reveal .overlay {
+  background: rgba(12, 7, 4, 0.92);
+}
