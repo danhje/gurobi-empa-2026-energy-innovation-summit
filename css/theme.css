@@ -506,3 +506,14 @@ body {
 body.program-sidebar-visible .reveal .slides section {
   padding-left: 22%;
 }
+
+/* Portrait screens (phones): hide the program sidebar and drop its gutter. */
+@media (orientation: portrait) {
+  .program-frame {
+    display: none !important;
+  }
+
+  body.program-sidebar-visible .reveal .slides section {
+    padding-left: 6%;
+  }
+}
