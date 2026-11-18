@@ -3,7 +3,8 @@
  *
  * Reads program.json, highlights the item tagged on the current slide
  * (or inherited from the most recent preceding data-session), and toggles
- * with the T key. Titles only — times and speakers stay in the JSON.
+ * with the T key. Renders each group from its label (program days, Summary, or any later section).
+ * Titles only — times and speakers stay in the JSON.
  */
 (function () {
   let program = null;
@@ -12,12 +13,16 @@
   let frame = null;
   let sidebar = null;
 
+  function groups() {
+    return (program && (program.groups || program.days)) || [];
+  }
+
   function allItems() {
     const list = [];
-    for (const day of program.days) {
-      for (const item of day.items) {
-        list.push({ day, item });
-        itemIndex.set(item.id, { day, item });
+    for (const group of groups()) {
+      for (const item of group.items) {
+        list.push({ group, item });
+        itemIndex.set(item.id, { group, item });
       }
     }
     return list;
@@ -61,8 +66,8 @@
 
   function itemIds() {
     const ids = [];
-    for (const day of program.days) {
-      for (const item of day.items) ids.push(item.id);
+    for (const group of groups()) {
+      for (const item of group.items) ids.push(item.id);
     }
     return ids;
   }
@@ -86,11 +91,11 @@
   function render(currentId) {
     if (!sidebar || !program) return;
     const parts = [];
-    for (const day of program.days) {
+    for (const group of groups()) {
       parts.push(
-        `<div class="program-sidebar__day">${escapeHtml(day.label)}</div>`
+        `<div class="program-sidebar__group">${escapeHtml(group.label)}</div>`
       );
-      for (const item of day.items) {
+      for (const item of group.items) {
         const cls = itemClass(item, currentId);
         const current = item.id === currentId;
         parts.push(

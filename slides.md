@@ -167,3 +167,32 @@ Have working groups!
 
 </div>
 </div>
+
+---
+
+<!-- .slide: class="content-slide takeaways-slide" data-session="summary-takeaways" -->
+
+<p class="eyebrow">Summary</p>
+
+## My takeaways
+
+### What I saw at the summit
+
+- Many have similar challenges to Statnett => get inspiration
+- "Everything" can be seen as optimization. Not from the marketing people, but from the technical people, who were almost tripping over each other to say "but you can solve that more simply with optimization".
+- Insatiable demand for optimization. As the tools get better, actors find new ways to fill the extra capacity.
+- Lots of focus on portfolio management.
+- Variability in solve time is very often just due to randomness. Compare data variability against seed variability before concluding that the data is the cause.
+
+---
+
+<!-- .slide: class="content-slide takeaways-slide" -->
+
+<p class="eyebrow">Summary</p>
+
+## My takeaways
+
+### For Statnett
+
+- Several people asked me how transparent Statnett is. Strong wish from market participants for more info about the state of the power system, incl. bottlenecks and capacities.
+- Go to more conferences with other TSOs or other actors in the power industry.

@@ -1,6 +1,6 @@
 {
   "source": "Energy innovation summit in Zurich 2026.md",
-  "days": [
+  "groups": [
     {
       "id": "day-1",
       "label": "Program day 1",
@@ -688,70 +688,18 @@
             }
           ],
           "notes": "EIS - Notes from Solving Nonlinear Problems to Local and Global Optimality"
-        },
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "label": "Summary",
+      "items": [
         {
-          "id": "d2-ask-the-experts",
-          "time": "15:10–15:30",
-          "start": "15:10",
-          "end": "15:30",
-          "title": "Ask the Experts",
+          "id": "summary-takeaways",
+          "title": "My takeaways",
           "kind": "talk",
-          "track": "Gurobi Breakout",
-          "speaker": "Christine Tawfik · Xavier Nodet · Matthias Miltenberger · Jaromił Najman · Jaap Pedersen",
-          "org": "Gurobi",
-          "speakers": [
-            {
-              "name": "Christine Tawfik",
-              "org": "Gurobi"
-            },
-            {
-              "name": "Xavier Nodet",
-              "org": "Gurobi"
-            },
-            {
-              "name": "Matthias Miltenberger",
-              "org": "Gurobi"
-            },
-            {
-              "name": "Jaromił Najman",
-              "org": "Gurobi"
-            },
-            {
-              "name": "Jaap Pedersen",
-              "org": "Gurobi"
-            }
-          ],
-          "notes": "EIS - Notes from Ask the Experts"
-        },
-        {
-          "id": "d2-roundtable-technology",
-          "time": "15:30–17:00",
-          "start": "15:30",
-          "end": "17:00",
-          "title": "Technology Roundtable",
-          "kind": "panel",
-          "track": "Closing Exchange",
-          "notes": "EIS - Notes from Technology Roundtable"
-        },
-        {
-          "id": "d2-roundtable-market",
-          "time": "15:30–17:00",
-          "start": "15:30",
-          "end": "17:00",
-          "title": "Market Roundtable",
-          "kind": "panel",
-          "track": "Closing Exchange",
-          "notes": "EIS - Notes from Market Roundtable"
-        },
-        {
-          "id": "d2-roundtable-system",
-          "time": "15:30–17:00",
-          "start": "15:30",
-          "end": "17:00",
-          "title": "System Roundtable",
-          "kind": "panel",
-          "track": "Closing Exchange",
-          "notes": "EIS - Notes from System Roundtable"
+          "notes": "EIS - Notes"
         }
       ]
     }
