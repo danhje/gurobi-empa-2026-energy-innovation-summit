@@ -586,7 +586,7 @@ body.program-sidebar-visible .reveal .slides section {
   border-left: 3px solid var(--honey);
   border-radius: 0;
   padding: 0.15em 0 0.2em 0.7em;
-  margin: 0 0 0.55em;
+  margin: 0.7em 0 0;
 }
 
 .reveal .info-box:last-child {
@@ -594,7 +594,7 @@ body.program-sidebar-visible .reveal .slides section {
 }
 
 .reveal .info-box h3 {
-  margin: 0 0 0.28em;
+  margin: 0 0 0.8em;
 }
 
 .reveal .info-box ul {
@@ -611,6 +611,11 @@ body.program-sidebar-visible .reveal .slides section {
   max-width: 100%;
   width: 100%;
   margin: 0.55em 0 0;
+}
+
+.reveal .info-box + pre {
+  /* em is the smaller code font, so this is a modest slide-sized gap */
+  margin-top: 1.8em;
 }
 
 .reveal .info-box p {

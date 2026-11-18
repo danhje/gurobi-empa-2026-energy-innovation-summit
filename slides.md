@@ -222,14 +222,15 @@ Have working groups!
 - Add objective (maximize electricity revenue, minimize CO2 costs, etc.)
 - Solve!
 
-```plaintext
-Simulation ---> Neural nets ---> Physical constraints ---> optimization of setpoints
-                                                           ^               ^
-Business constraints --------------------------------------+               |
-Business objectives -------------------------------------------------------+
-```
-
 </div>
+
+```plaintext
+                                                             Business constraints
+                                                                       v
+Simulation ---> Neural nets ---> Physical constraints ---> optimization of setpoints
+                                                                       ^
+                                                              Business objectives
+```
 
 </div>
 <div>
