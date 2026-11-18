@@ -59,41 +59,15 @@
     return { hide: true, id: null };
   }
 
-  function dayFor(id) {
-    if (id && itemIndex.has(id)) return itemIndex.get(id).day;
-    return program.days[0] || null;
+  function itemIds() {
+    const ids = [];
+    for (const day of program.days) {
+      for (const item of day.items) ids.push(item.id);
+    }
+    return ids;
   }
 
-  function windowedItems(day, currentId) {
-    const items = day.items;
-    const currentIndex = Math.max(
-      0,
-      items.findIndex((it) => it.id === currentId)
-    );
-    const frameH = frame ? frame.clientHeight : 1080;
-    const headerH = frameH * 0.08;
-    const rowH = Math.max(28, frameH * 0.036);
-    const maxCount = Math.max(8, Math.floor((frameH - headerH) / rowH));
-    if (items.length <= maxCount) {
-      return { items, start: 0, end: items.length, clippedBefore: false, clippedAfter: false };
-    }
-    const half = Math.floor(maxCount / 2);
-    let start = Math.max(0, currentIndex - half);
-    let end = start + maxCount;
-    if (end > items.length) {
-      end = items.length;
-      start = Math.max(0, end - maxCount);
-    }
-    return {
-      items: items.slice(start, end),
-      start,
-      end,
-      clippedBefore: start > 0,
-      clippedAfter: end < items.length,
-    };
-  }
-
-  function itemClass(day, item, currentId) {
+  function itemClass(item, currentId) {
     const classes = ["program-sidebar__item"];
     if (item.kind) classes.push(`is-${item.kind}`);
     if (item.id === currentId) {
@@ -101,7 +75,7 @@
       return classes.join(" ");
     }
     if (!currentId) return classes.join(" ");
-    const ids = day.items.map((it) => it.id);
+    const ids = itemIds();
     const ci = ids.indexOf(currentId);
     const ii = ids.indexOf(item.id);
     if (ci !== -1 && ii !== -1 && ii < ci) classes.push("is-past");
@@ -111,33 +85,23 @@
 
   function render(currentId) {
     if (!sidebar || !program) return;
-    const day = dayFor(currentId);
-    if (!day) {
-      sidebar.innerHTML = "";
-      return;
-    }
-    const win = windowedItems(day, currentId);
     const parts = [];
-    parts.push(
-      `<div class="program-sidebar__day">${escapeHtml(day.label)}</div>`
-    );
-    if (win.clippedBefore) {
-      parts.push(`<div class="program-sidebar__more" aria-hidden="true">···</div>`);
-    }
-    for (const item of win.items) {
-      const cls = itemClass(day, item, currentId);
-      const current = item.id === currentId;
+    for (const day of program.days) {
       parts.push(
-        `<div class="${cls}" data-id="${escapeHtml(item.id)}" ${
-          current ? 'aria-current="true"' : ""
-        } title="${escapeHtml(item.title)}">` +
-          `<span class="program-sidebar__marker" aria-hidden="true"></span>` +
-          `<span class="program-sidebar__title">${escapeHtml(item.title)}</span>` +
-          `</div>`
+        `<div class="program-sidebar__day">${escapeHtml(day.label)}</div>`
       );
-    }
-    if (win.clippedAfter) {
-      parts.push(`<div class="program-sidebar__more" aria-hidden="true">···</div>`);
+      for (const item of day.items) {
+        const cls = itemClass(item, currentId);
+        const current = item.id === currentId;
+        parts.push(
+          `<div class="${cls}" data-id="${escapeHtml(item.id)}" ${
+            current ? 'aria-current="true"' : ""
+          } title="${escapeHtml(item.title)}">` +
+            `<span class="program-sidebar__marker" aria-hidden="true"></span>` +
+            `<span class="program-sidebar__title">${escapeHtml(item.title)}</span>` +
+            `</div>`
+        );
+      }
     }
     sidebar.innerHTML = parts.join("");
   }
