@@ -2,9 +2,11 @@
 
 <p class="eyebrow">Welcome</p>
 
-# Energy Innovation Summit 2026
+# Finding value in volatility
 
-<p class="subtitle">Gurobi × Empa · Finding Value in Volatility</p>
+<p class="subtitle">Empa welcome note</p>
+
+<p class="meta">Day 1 · Tue 17 Nov</p>
 
 Note:
 Placeholder deck only — scaffolding, theme, and hosting. Speaker notes open with the S key.
