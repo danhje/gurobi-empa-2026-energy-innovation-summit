@@ -13,7 +13,7 @@ Placeholder deck only — scaffolding, theme, and hosting. Speaker notes open wi
 
 ---
 
-<!-- .slide: class="content-slide" -->
+<!-- .slide: class="content-slide" data-session="d1-tso-dso" -->
 
 <p class="eyebrow">Agenda</p>
 
@@ -55,7 +55,7 @@ Placeholder deck only — scaffolding, theme, and hosting. Speaker notes open wi
 
 ---
 
-<!-- .slide: class="content-slide" -->
+<!-- .slide: class="content-slide" data-session="d1-surrogate-models" -->
 
 <p class="eyebrow">Methods</p>
 

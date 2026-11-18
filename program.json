@@ -1,0 +1,767 @@
+{
+  "source": "Energy innovation summit in Zurich 2026.md",
+  "days": [
+    {
+      "id": "day-1",
+      "label": "Program day 1",
+      "items": [
+        {
+          "id": "d1-registration",
+          "time": "08:00–09:00",
+          "start": "08:00",
+          "end": "09:00",
+          "title": "Registration",
+          "kind": "break"
+        },
+        {
+          "id": "d1-welcome",
+          "time": "09:00–09:15",
+          "start": "09:00",
+          "end": "09:15",
+          "title": "Welcome: Context Setting, Housekeeping, and Gurobi and Empa Team Presentation",
+          "kind": "talk",
+          "track": "Welcome",
+          "speaker": "Tim Reintgen · Georgios Mavromatidis",
+          "org": "Gurobi · Empa",
+          "speakers": [
+            {
+              "name": "Tim Reintgen",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Georgios Mavromatidis",
+              "org": "Empa"
+            }
+          ],
+          "notes": "EIS - Notes from Welcome -  Context Setting, Housekeeping, and Gurobi and Empa Team Presentation"
+        },
+        {
+          "id": "d1-tso-dso",
+          "time": "09:15–09:45",
+          "start": "09:15",
+          "end": "09:45",
+          "title": "TSO-DSO Coordination: Unlocking Grid and System Value from Distributed Flexibility",
+          "kind": "talk",
+          "track": "Keynote",
+          "speaker": "Raphael Wu",
+          "org": "Swissgrid",
+          "speakers": [
+            {
+              "name": "Raphael Wu",
+              "org": "Swissgrid"
+            }
+          ],
+          "notes": "EIS - Notes from TSO-DSO Coordination -  Unlocking Grid and System Value from Distributed Flexibility"
+        },
+        {
+          "id": "d1-merit-order",
+          "time": "09:45–10:05",
+          "start": "09:45",
+          "end": "10:05",
+          "title": "From Spreadsheet Merit-Order to System-Wide Optimization",
+          "kind": "talk",
+          "track": "Technology Layer",
+          "speaker": "Sebastian Angerhausen",
+          "org": "Stadtwerke Krefeld / Quantum",
+          "speakers": [
+            {
+              "name": "Sebastian Angerhausen",
+              "org": "Stadtwerke Krefeld / Quantum"
+            }
+          ],
+          "notes": "EIS - Notes from From Spreadsheet Merit-Order to System-Wide Optimization"
+        },
+        {
+          "id": "d1-surrogate-models",
+          "time": "10:05–10:25",
+          "start": "10:05",
+          "end": "10:25",
+          "title": "Embedded Surrogate Models for Real-Time Optimization of Industrial Energy Systems",
+          "kind": "talk",
+          "track": "Technology Layer",
+          "speaker": "Joshua Schäfermeyer",
+          "org": "Iqony Solutions GmbH",
+          "speakers": [
+            {
+              "name": "Joshua Schäfermeyer",
+              "org": "Iqony Solutions GmbH"
+            }
+          ],
+          "notes": "EIS - Notes from Embedded Surrogate Models for Real-Time Optimization of Industrial Energy Systems"
+        },
+        {
+          "id": "d1-session-panel",
+          "time": "10:25–10:35",
+          "start": "10:25",
+          "end": "10:35",
+          "title": "Session Panel",
+          "kind": "panel",
+          "track": "Technology Layer",
+          "speaker": "Sebastian Angerhausen · Joshua Schäfermeyer",
+          "org": "Stadtwerke Krefeld / Quantum · Iqony Solutions GmbH",
+          "speakers": [
+            {
+              "name": "Sebastian Angerhausen",
+              "org": "Stadtwerke Krefeld / Quantum"
+            },
+            {
+              "name": "Joshua Schäfermeyer",
+              "org": "Iqony Solutions GmbH"
+            }
+          ],
+          "notes": "EIS - Notes from Session Panel (Day 1, Panel 1)"
+        },
+        {
+          "id": "d1-coffee",
+          "time": "10:35–11:05",
+          "start": "10:35",
+          "end": "11:05",
+          "title": "Coffee Break",
+          "kind": "break",
+          "notes": "EIS - Notes from Coffee Break (Day 1, Coffee Break 1)"
+        },
+        {
+          "id": "d1-innovation-talk",
+          "time": "11:05–11:25",
+          "start": "11:05",
+          "end": "11:25",
+          "title": "Innovation in Practical Action Talk",
+          "kind": "talk",
+          "track": "Market Layer",
+          "speaker": "Olivier Megel",
+          "org": "Alpiq",
+          "speakers": [
+            {
+              "name": "Olivier Megel",
+              "org": "Alpiq"
+            }
+          ],
+          "notes": "EIS - Notes from Innovation in Practical Action Talk (Day 1, Talk 1)"
+        },
+        {
+          "id": "d1-portfolio-intelligence",
+          "time": "11:25–12:45",
+          "start": "11:25",
+          "end": "12:45",
+          "title": "Optimizing Value in Volatility: From Fragmented Decisions to Portfolio Intelligence",
+          "kind": "talk",
+          "track": "Market Layer",
+          "speaker": "Quinten de Wit",
+          "org": "Eneco",
+          "speakers": [
+            {
+              "name": "Quinten de Wit",
+              "org": "Eneco"
+            }
+          ],
+          "notes": "EIS - Notes from Optimizing Value in Volatility - From Fragmented Decisions to Portfolio Intelligence"
+        },
+        {
+          "id": "d1-short-term-trading",
+          "time": "11:45–12:05",
+          "start": "11:45",
+          "end": "12:05",
+          "title": "Optimization Use Cases for Short Term Power Trading",
+          "kind": "talk",
+          "track": "Market Layer",
+          "speaker": "Azzurra Casali · Stefanos Delikaraoglou",
+          "org": "Axpo",
+          "speakers": [
+            {
+              "name": "Azzurra Casali",
+              "org": "Axpo"
+            },
+            {
+              "name": "Stefanos Delikaraoglou",
+              "org": "Axpo"
+            }
+          ],
+          "notes": "EIS - Notes from Optimization Use Cases for Short Term Power Trading"
+        },
+        {
+          "id": "d1-session-panel-2",
+          "time": "12:05–12:20",
+          "start": "12:05",
+          "end": "12:20",
+          "title": "Session Panel",
+          "kind": "panel",
+          "track": "Market Layer",
+          "speaker": "Olivier Megel · Quinten de Wit · Stefanos Delikaraoglou · Azzurra Casali",
+          "org": "Alpiq · Eneco · Axpo",
+          "speakers": [
+            {
+              "name": "Olivier Megel",
+              "org": "Alpiq"
+            },
+            {
+              "name": "Quinten de Wit",
+              "org": "Eneco"
+            },
+            {
+              "name": "Stefanos Delikaraoglou",
+              "org": "Axpo"
+            },
+            {
+              "name": "Azzurra Casali",
+              "org": "Axpo"
+            }
+          ],
+          "notes": "EIS - Notes from Session Panel (Day 1, Panel 2)"
+        },
+        {
+          "id": "d1-lunch",
+          "time": "12:20–13:50",
+          "start": "12:20",
+          "end": "13:50",
+          "title": "Lunch",
+          "kind": "break",
+          "notes": "EIS - Notes from Lunch (Day 1)"
+        },
+        {
+          "id": "d1-empa-welcome",
+          "time": "13:50–14:05",
+          "start": "13:50",
+          "end": "14:05",
+          "title": "Empa Welcome Note",
+          "kind": "talk",
+          "track": "Welcome",
+          "speaker": "Matthias Sulzer",
+          "org": "Empa",
+          "speakers": [
+            {
+              "name": "Matthias Sulzer",
+              "org": "Empa"
+            }
+          ],
+          "notes": "EIS - Notes from Empa Welcome Note"
+        },
+        {
+          "id": "d1-innovation-talk-2",
+          "time": "14:05–14:25",
+          "start": "14:05",
+          "end": "14:25",
+          "title": "Innovation in Practical Action Talk",
+          "kind": "talk",
+          "track": "System Layer",
+          "speaker": "Sebastian Wehrle",
+          "org": "Wien Energie | BOKU University Vienna",
+          "speakers": [
+            {
+              "name": "Sebastian Wehrle",
+              "org": "Wien Energie | BOKU University Vienna"
+            }
+          ],
+          "notes": "EIS - Notes from Innovation in Practical Action Talk (Day 1, Talk 2)"
+        },
+        {
+          "id": "d1-decentralized-energy",
+          "time": "14:25–14:45",
+          "start": "14:25",
+          "end": "14:45",
+          "title": "When Optimization Stops Being Optional: Lessons from Planning Decentralized Energy in the Real World",
+          "kind": "talk",
+          "track": "System Layer",
+          "speaker": "Andrew Bollinger · Helen Heinz",
+          "org": "Urban Sympheny AG · Rapp AG",
+          "speakers": [
+            {
+              "name": "Andrew Bollinger",
+              "org": "Urban Sympheny AG"
+            },
+            {
+              "name": "Helen Heinz",
+              "org": "Rapp AG"
+            }
+          ],
+          "notes": "EIS - Notes from When Optimization Stops Being Optional - Lessons from Planning Decentralized Energy in the Real World"
+        },
+        {
+          "id": "d1-breadth-depth",
+          "time": "14:45–15:05",
+          "start": "14:45",
+          "end": "15:05",
+          "title": "Balancing Analysis Breadth and Depth in Large-Scale Energy System Optimization",
+          "kind": "talk",
+          "track": "System Layer",
+          "speaker": "Turhan Demiray",
+          "org": "Research Center for Energy Networks - ETH Zurich",
+          "speakers": [
+            {
+              "name": "Turhan Demiray",
+              "org": "Research Center for Energy Networks - ETH Zurich"
+            }
+          ],
+          "notes": "EIS - Notes from Balancing Analysis Breadth and Depth in Large-Scale Energy System Optimization"
+        },
+        {
+          "id": "d1-industrializing-oss",
+          "time": "15:05–15:25",
+          "start": "15:05",
+          "end": "15:25",
+          "title": "Industrializing Open Source",
+          "kind": "talk",
+          "track": "System Layer",
+          "speaker": "Harry van der Weijde",
+          "org": "Open Energy Transition",
+          "speakers": [
+            {
+              "name": "Harry van der Weijde",
+              "org": "Open Energy Transition"
+            }
+          ],
+          "notes": "EIS - Notes from Industrializing Open Source"
+        },
+        {
+          "id": "d1-session-panel-3",
+          "time": "15:25–15:45",
+          "start": "15:25",
+          "end": "15:45",
+          "title": "Session Panel",
+          "kind": "panel",
+          "track": "System Layer",
+          "speaker": "Sebastian Wehrle · Harry van der Weijde · Turhan Demiray · Helen Heinz · Andrew Bollinger",
+          "org": "Wien Energie | BOKU University Vienna · Open Energy Transition · Research Center for Energy Networks - ETH Zurich · Rapp AG · Urban Sympheny AG",
+          "speakers": [
+            {
+              "name": "Sebastian Wehrle",
+              "org": "Wien Energie | BOKU University Vienna"
+            },
+            {
+              "name": "Harry van der Weijde",
+              "org": "Open Energy Transition"
+            },
+            {
+              "name": "Turhan Demiray",
+              "org": "Research Center for Energy Networks - ETH Zurich"
+            },
+            {
+              "name": "Helen Heinz",
+              "org": "Rapp AG"
+            },
+            {
+              "name": "Andrew Bollinger",
+              "org": "Urban Sympheny AG"
+            }
+          ],
+          "notes": "EIS - Notes from Session Panel (Day 1, Panel 3)"
+        },
+        {
+          "id": "d1-coffee-2",
+          "time": "15:45–16:15",
+          "start": "15:45",
+          "end": "16:15",
+          "title": "Coffee Break",
+          "kind": "break",
+          "notes": "EIS - Notes from Coffee Break (Day 1, Coffee Break 2)"
+        },
+        {
+          "id": "d1-reflection",
+          "time": "16:15–16:35",
+          "start": "16:15",
+          "end": "16:35",
+          "title": "Reflection on Day 1 and Outlook",
+          "kind": "talk",
+          "track": "Keynote",
+          "speaker": "Line Roald",
+          "org": "Google",
+          "speakers": [
+            {
+              "name": "Line Roald",
+              "org": "Google"
+            }
+          ],
+          "notes": "EIS - Notes from Reflection on Day 1 and Outlook"
+        },
+        {
+          "id": "d1-panel-volatility",
+          "time": "16:35–17:15",
+          "start": "16:35",
+          "end": "17:15",
+          "title": "Panel: Finding Value in Volatility",
+          "kind": "panel",
+          "track": "Panel and Closing",
+          "speaker": "Line Roald · Raphael Wu · Mashael Yazdanie · Sebastian Wehrle · Olivier Megel · Lennart Lahrs",
+          "org": "Google · Swissgrid · Empa · Wien Energie | BOKU University Vienna · Alpiq · Gurobi",
+          "speakers": [
+            {
+              "name": "Line Roald",
+              "org": "Google"
+            },
+            {
+              "name": "Raphael Wu",
+              "org": "Swissgrid"
+            },
+            {
+              "name": "Mashael Yazdanie",
+              "org": "Empa"
+            },
+            {
+              "name": "Sebastian Wehrle",
+              "org": "Wien Energie | BOKU University Vienna"
+            },
+            {
+              "name": "Olivier Megel",
+              "org": "Alpiq"
+            },
+            {
+              "name": "Lennart Lahrs",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from Panel - Finding Value in Volatility"
+        },
+        {
+          "id": "d1-closing",
+          "time": "17:15–17:25",
+          "start": "17:15",
+          "end": "17:25",
+          "title": "Closing Words and Dinner Preview",
+          "kind": "talk",
+          "speaker": "Tim Reintgen · Georgios Mavromatidis",
+          "org": "Gurobi · Empa",
+          "speakers": [
+            {
+              "name": "Tim Reintgen",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Georgios Mavromatidis",
+              "org": "Empa"
+            }
+          ],
+          "notes": "EIS - Notes from Closing Words and Dinner Preview"
+        },
+        {
+          "id": "d1-dinner",
+          "time": "19:00–22:00",
+          "start": "19:00",
+          "end": "22:00",
+          "title": "Networking Dinner",
+          "kind": "break",
+          "notes": "EIS - Notes from Networking Dinner"
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "label": "Program day 2",
+      "items": [
+        {
+          "id": "d2-welcome",
+          "time": "09:00–09:10",
+          "start": "09:00",
+          "end": "09:10",
+          "title": "Welcome to Day 2",
+          "kind": "talk",
+          "track": "Welcome",
+          "speaker": "Tim Reintgen · Georgios Mavromatidis",
+          "org": "Gurobi · Empa",
+          "speakers": [
+            {
+              "name": "Tim Reintgen",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Georgios Mavromatidis",
+              "org": "Empa"
+            }
+          ],
+          "notes": "EIS - Notes from Welcome to Day 2"
+        },
+        {
+          "id": "d2-reliable-decisions",
+          "time": "09:10–09:30",
+          "start": "09:10",
+          "end": "09:30",
+          "title": "From Ideas to Reliable Decisions",
+          "kind": "talk",
+          "track": "Making Optimization Work",
+          "speaker": "Lennart Lahrs · Charmae Franchesca Mendoza",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Lennart Lahrs",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Charmae Franchesca Mendoza",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from From Ideas to Reliable Decisions"
+        },
+        {
+          "id": "d2-secret-sauce",
+          "time": "09:30–09:50",
+          "start": "09:30",
+          "end": "09:50",
+          "title": "The Secret Sauce: How Developers and Experts Innovate Together",
+          "kind": "talk",
+          "track": "Making Optimization Work",
+          "speaker": "Oliver Bastert · Sonja Mars",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Oliver Bastert",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Sonja Mars",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from The Secret Sauce - How Developers and Experts Innovate Together"
+        },
+        {
+          "id": "d2-ai-optimization",
+          "time": "09:50–10:10",
+          "start": "09:50",
+          "end": "10:10",
+          "title": "AI and Optimization: The Next Frontier of Decision-Making",
+          "kind": "talk",
+          "track": "Making Optimization Work",
+          "speaker": "Pascal Van Hentenryck",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Pascal Van Hentenryck",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from AI and Optimization - The Next Frontier of Decision-Making"
+        },
+        {
+          "id": "d2-coffee",
+          "time": "10:10–10:40",
+          "start": "10:10",
+          "end": "10:40",
+          "title": "Coffee Break",
+          "kind": "break",
+          "notes": "EIS - Notes from Coffee Break (Day 2, Coffee Break 2)"
+        },
+        {
+          "id": "d2-trading-desk",
+          "time": "10:40–11:00",
+          "start": "10:40",
+          "end": "11:00",
+          "title": "The Organization Behind the Optimization: Delivering Value to the Trading Desk",
+          "kind": "talk",
+          "speaker": "Nadya Chernyavskaya",
+          "org": "TotalEnergies",
+          "speakers": [
+            {
+              "name": "Nadya Chernyavskaya",
+              "org": "TotalEnergies"
+            }
+          ],
+          "notes": "EIS - Notes from The Organization Behind the Optimization - Delivering Value to the Trading Desk"
+        },
+        {
+          "id": "d2-panel-decision-system",
+          "time": "11:00–12:00",
+          "start": "11:00",
+          "end": "12:00",
+          "title": "Panel: The Energy Decision System",
+          "kind": "panel",
+          "track": "Making Optimization Work, Panel and Closing",
+          "speaker": "Nadya Chernyavskaya · Line Roald · Saverio Bolognani · Harry van der Weijde · Pascal Van Hentenryck · Oliver Bastert",
+          "org": "TotalEnergies · Google · ETH Zurich · Open Energy Transition · Gurobi",
+          "speakers": [
+            {
+              "name": "Nadya Chernyavskaya",
+              "org": "TotalEnergies"
+            },
+            {
+              "name": "Line Roald",
+              "org": "Google"
+            },
+            {
+              "name": "Saverio Bolognani",
+              "org": "ETH Zurich"
+            },
+            {
+              "name": "Harry van der Weijde",
+              "org": "Open Energy Transition"
+            },
+            {
+              "name": "Pascal Van Hentenryck",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Oliver Bastert",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from Panel - The Energy Decision System"
+        },
+        {
+          "id": "d2-lunch",
+          "time": "12:00–13:30",
+          "start": "12:00",
+          "end": "13:30",
+          "title": "Lunch",
+          "kind": "break",
+          "notes": "EIS - Notes from Lunch (Day 2)"
+        },
+        {
+          "id": "d2-ehubx-breakout",
+          "time": "13:30–15:30",
+          "start": "13:30",
+          "end": "15:30",
+          "title": "Open Source Energy System Modelling: ehubX Energy System Modelling Tool with Platform-Based Design",
+          "kind": "talk",
+          "track": "Empa Breakout",
+          "speaker": "Georgios Mavromatidis · Mashael Yazdanie",
+          "org": "Empa",
+          "speakers": [
+            {
+              "name": "Georgios Mavromatidis",
+              "org": "Empa"
+            },
+            {
+              "name": "Mashael Yazdanie",
+              "org": "Empa"
+            }
+          ],
+          "notes": "EIS - Notes from Open Source Energy System Modelling - ehubX Energy System Modelling Tool with Platform-Based Design"
+        },
+        {
+          "id": "d2-explainability",
+          "time": "13:30–13:55",
+          "start": "13:30",
+          "end": "13:55",
+          "title": "Explainability in Optimization",
+          "kind": "talk",
+          "track": "Gurobi Breakout",
+          "speaker": "Christine Tawfik",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Christine Tawfik",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from Explainability in Optimization"
+        },
+        {
+          "id": "d2-gurobi-14",
+          "time": "13:55–14:20",
+          "start": "13:55",
+          "end": "14:20",
+          "title": "What's New in Gurobi 14",
+          "kind": "talk",
+          "track": "Gurobi Breakout",
+          "speaker": "Xavier Nodet",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Xavier Nodet",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from What's New in Gurobi 14"
+        },
+        {
+          "id": "d2-open-energy-benchmark",
+          "time": "14:20–14:45",
+          "start": "14:20",
+          "end": "14:45",
+          "title": "v14 Performance on the Open Energy Benchmark",
+          "kind": "talk",
+          "track": "Gurobi Breakout",
+          "speaker": "Matthias Miltenberger",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Matthias Miltenberger",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from v14 Performance on the Open Energy Benchmark"
+        },
+        {
+          "id": "d2-nonlinear",
+          "time": "14:45–15:10",
+          "start": "14:45",
+          "end": "15:10",
+          "title": "Solving Nonlinear Problems to Local and Global Optimality",
+          "kind": "talk",
+          "track": "Gurobi Breakout",
+          "speaker": "Jaromił Najman",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Jaromił Najman",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from Solving Nonlinear Problems to Local and Global Optimality"
+        },
+        {
+          "id": "d2-ask-the-experts",
+          "time": "15:10–15:30",
+          "start": "15:10",
+          "end": "15:30",
+          "title": "Ask the Experts",
+          "kind": "talk",
+          "track": "Gurobi Breakout",
+          "speaker": "Christine Tawfik · Xavier Nodet · Matthias Miltenberger · Jaromił Najman · Jaap Pedersen",
+          "org": "Gurobi",
+          "speakers": [
+            {
+              "name": "Christine Tawfik",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Xavier Nodet",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Matthias Miltenberger",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Jaromił Najman",
+              "org": "Gurobi"
+            },
+            {
+              "name": "Jaap Pedersen",
+              "org": "Gurobi"
+            }
+          ],
+          "notes": "EIS - Notes from Ask the Experts"
+        },
+        {
+          "id": "d2-roundtable-technology",
+          "time": "15:30–17:00",
+          "start": "15:30",
+          "end": "17:00",
+          "title": "Technology Roundtable",
+          "kind": "panel",
+          "track": "Closing Exchange",
+          "notes": "EIS - Notes from Technology Roundtable"
+        },
+        {
+          "id": "d2-roundtable-market",
+          "time": "15:30–17:00",
+          "start": "15:30",
+          "end": "17:00",
+          "title": "Market Roundtable",
+          "kind": "panel",
+          "track": "Closing Exchange",
+          "notes": "EIS - Notes from Market Roundtable"
+        },
+        {
+          "id": "d2-roundtable-system",
+          "time": "15:30–17:00",
+          "start": "15:30",
+          "end": "17:00",
+          "title": "System Roundtable",
+          "kind": "panel",
+          "track": "Closing Exchange",
+          "notes": "EIS - Notes from System Roundtable"
+        }
+      ]
+    }
+  ]
+}

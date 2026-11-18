@@ -12,3 +12,6 @@
 - Text may extend into the brighter right-hand area. Check legibility rather than hard-capping width.
 - reveal.js 5.2.1 is vendored in `vendor/`. Keep it local rather than switching to a CDN. KaTeX is pinned via `katex.version` in `index.html`.
 - To preview without Playwright: run `python3 -m http.server 8765`, then `google-chrome --headless=new --no-sandbox --hide-scrollbars --window-size=1920,1080 --virtual-time-budget=4000 --screenshot=out.png "http://localhost:8765/#/2"` (the hash picks the slide index).
+
+- The summit program lives in `program.json` and is the single source of truth for the left-hand overview. It was built from the Obsidian note `Energy innovation summit in Zurich 2026.md`; change the JSON when the program changes, don't invent sessions. A `notes` field, when present, is the linked notes page name for later mapping — not shown in the sidebar.
+- Tag the first slide of a session with `<!-- .slide: data-session="item-id" -->`. Later slides inherit the most recent preceding `data-session` in document order (horizontal and vertical). `data-session="none"` or class `no-program` hides the sidebar. It is also hidden on `.title-slide` unless that slide has its own `data-session`. The sidebar shows titles only; toggle it with `T`.

@@ -381,3 +381,128 @@ body {
 .reveal .overlay {
   background: rgba(22, 13, 8, 0.92);
 }
+
+
+/* -------------------------------------------------------------------------- */
+/* Program overview sidebar (titles only; lives in the same 16:9 frame)       */
+/* -------------------------------------------------------------------------- */
+
+.program-frame {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 16 / 9;
+  width: min(100vw, calc(100vh * 16 / 9));
+  height: auto;
+  z-index: 4;
+  pointer-events: none;
+  container-type: size;
+}
+
+.program-frame[hidden] {
+  display: none;
+}
+
+.program-sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 19%;
+  box-sizing: border-box;
+  padding: 4.5cqh 1.2cqw 3.5cqh 1.6cqw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.15cqh;
+  pointer-events: none;
+  background: linear-gradient(
+    to right,
+    rgba(22, 13, 8, 0.42) 0%,
+    rgba(22, 13, 8, 0.22) 70%,
+    rgba(22, 13, 8, 0) 100%
+  );
+  border-right: 0;
+  font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--taupe);
+}
+
+.program-sidebar__day {
+  font-family: Poppins, Inter, sans-serif;
+  font-size: 1.35cqh;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sand);
+  margin: 0 0 1.6cqh;
+  flex: 0 0 auto;
+}
+
+.program-sidebar__item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55cqw;
+  padding: 0.45cqh 0 0.45cqh 0.15cqw;
+  font-size: 1.45cqh;
+  line-height: 1.25;
+  color: var(--taupe);
+  flex: 0 0 auto;
+}
+
+.program-sidebar__marker {
+  flex: 0 0 0.35cqw;
+  width: 0.35cqw;
+  height: 1.15cqh;
+  margin-top: 0.2cqh;
+  background: transparent;
+}
+
+.program-sidebar__title {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.program-sidebar__item.is-past {
+  color: rgba(201, 174, 146, 0.55);
+}
+
+.program-sidebar__item.is-upcoming {
+  color: var(--taupe);
+}
+
+.program-sidebar__item.is-current {
+  color: var(--honey);
+  font-weight: 500;
+}
+
+.program-sidebar__item.is-current .program-sidebar__marker {
+  background: var(--burnt-orange);
+}
+
+.program-sidebar__item.is-current .program-sidebar__title {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.program-sidebar__item.is-break:not(.is-current) .program-sidebar__title {
+  color: inherit;
+  font-style: italic;
+}
+
+.program-sidebar__more {
+  font-size: 1.2cqh;
+  letter-spacing: 0.2em;
+  color: rgba(201, 174, 146, 0.45);
+  padding: 0.2cqh 0 0.2cqh 0.7cqw;
+}
+
+body.program-sidebar-visible .reveal .slides section {
+  padding-left: 22%;
+}
