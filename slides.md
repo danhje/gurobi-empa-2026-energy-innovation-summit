@@ -357,6 +357,42 @@ Business objectives
 
 ---
 
+<!-- .slide: class="content-slide alpiq-slide compressed-2" data-session="d1-innovation-talk" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">Market Layer</p>
+
+## Innovation in Practical Action Talk
+
+<p class="speakers">
+Olivier Megel, Alpiq
+</p>
+
+- How to exploit flexibility as a producer, given volatility, e.g. through long-term options
+- Volatility always good as producer
+- Combine physical and financial trade
+- Dynamic programming (likely use, simplified):
+  - Question: sell water now, or save for later?
+  - Split into stages (hours / weeks). State = reservoir level
+  - Solve backwards from the end: for each level, best choice = income now + value of remaining water
+  - Result: water value. Run when price > water value, otherwise save
+  - Uncertain prices / inflow → stochastic DP (SDDP)
+
+</div>
+<div>
+
+<div class="r-stack">
+<img class="slide-image fragment fade-out" data-fragment-index="0" src="assets/img/img-0715.jpg" alt="Photograph of a slide projected during the talk.">
+<img class="slide-image fragment" data-fragment-index="0" src="assets/img/image-29.jpg" alt="Photograph of a slide projected during the talk.">
+</div>
+
+</div>
+</div>
+
+---
+
 <!-- .slide: class="content-slide takeaways-slide" data-session="summary-takeaways" -->
 
 <p class="eyebrow">Summary</p>
