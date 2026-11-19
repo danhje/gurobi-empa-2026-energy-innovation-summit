@@ -157,11 +157,9 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 
 
 </div>
-
-</div>
 <div>
 
-<img class="slide-image" src="assets/img/TSO-DSO-products.jpg" alt="">
+<img class="slide-image" src="assets/img/TSO-DSO-products.jpg" alt="Photograph of a slide on flexibility products and timing.">
 
 </div>
 </div>
