@@ -1,6 +1,6 @@
 <!-- .slide: class="title-slide" data-session="none" -->
 
-# Notes from the Energy Innovation Summit 2026
+# Notes from the 2026 Energy Innovation Summit
 
 <p class="subtitle">Daniel Hjertholm</p>
 
@@ -11,21 +11,48 @@
 <div class="cols cols-media cols-media-portrait">
 <div>
 
-<p class="eyebrow">General</p>
+<!-- <p class="eyebrow">General</p> -->
 
 ## Energy Innovation Summit 2026
 
-- Organized by Gurobi and Empa (The Swiss Federal Laboratories for Materials Science and Technology)
+- Organized by Gurobi (optimization software company) and Empa (The Swiss Federal Laboratories for Materials Science and Technology)
+- 7th Gurobi summit (some of these have been TSO-specific and/or grid-focused)
 - Focus on optimization utilized on energy systems
+- Presentations from both industry and academia
+- Day 1: Energy first. Day 2: Optimization first.
 - 222 attendees (TSOs, utilities, BSPs, traders)
 - Framing: Volatility requires optimization. Opportunity, not just something to manage / tame.
 - Why? Need for fast decisions (e.g. dispatch).
-- Day 1: Energy first. Day 2: Optimization first.
 
 </div>
 <div>
 
 <img class="slide-image" src="assets/img/img-0706.jpg" alt="Photograph of a banner in the auditorium.">
+
+</div>
+</div>
+
+---
+
+<!-- .slide: class="content-slide intro-slide" data-session="none" -->
+
+<div class="cols cols-media cols-media-portrait">
+<div>
+
+<!-- <p class="eyebrow">General</p> -->
+
+## Optimization?
+
+- ~Gradient methods~
+- ~Dynamic programming~
+- ~Bayesian optimization~
+- Mathematical programming / mathematical optimization
+
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/optimization.jpg" alt="Optimization venn diagram">
 
 </div>
 </div>
