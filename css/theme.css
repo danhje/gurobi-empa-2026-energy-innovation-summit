@@ -179,7 +179,9 @@ body {
   margin-top: 0.95em;
 }
 
-.eyebrow {
+/* Extra p selector keeps eyebrows/speakers immune to .compressed-N p font sizes. */
+.eyebrow,
+.reveal .slides p.eyebrow {
   font-family: Poppins, Inter, sans-serif;
   font-size: 0.42em;
   font-weight: 600;
@@ -519,7 +521,8 @@ body.program-sidebar-visible .reveal .slides section {
   line-height: 1.15;
 }
 
-.reveal .speakers {
+.reveal .speakers,
+.reveal .slides p.speakers {
   font-family: Inter, sans-serif;
   font-size: 0.52em;
   font-weight: 400;
