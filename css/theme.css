@@ -176,6 +176,7 @@ body {
   color: var(--honey);
   letter-spacing: 0.01em;
   margin-bottom: 0.8em;
+  margin-top: 0.95em;
 }
 
 .eyebrow {
@@ -585,20 +586,32 @@ body.program-sidebar-visible .reveal .slides section {
   margin-bottom: 0.65em;
 }
 
+.reveal .compressed-1 h2 {
+  font-size: 1.35em;
+}
+
 .reveal .compressed-1 ul {
   font-size: 0.7em;
 }
 
-.reveal .compressed-1 h2 {
-  font-size: 1.35em;
+.reveal .compressed-1 p {
+  font-size: 0.7em;
+}
+
+.reveal .compressed-2 h2 {
+  font-size: 1.2em;
 }
 
 .reveal .compressed-2 ul {
   font-size: 0.65em;
 }
 
-.reveal .compressed-2 h2 {
-  font-size: 1.2em;
+.reveal .compressed-2 p {
+  font-size: 0.65em;
+}
+
+.reveal .compressed-2 code {
+  font-size: 0.6em;
 }
 
 /* Unlinked intro slide: slightly tighter type so five points sit beside a portrait photo. */

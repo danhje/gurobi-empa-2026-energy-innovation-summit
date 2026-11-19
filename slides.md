@@ -201,6 +201,8 @@ Sebastian Angerhausen, Stadtwerke Krefeld / Quantum
 
 <div>
 
+Quantum pools energy (heat, gas, electricity) for trading + optimization services
+
 ### Challenge
 
 - Optimize across energy types
@@ -306,6 +308,8 @@ Sebastian Angerhausen, Stadtwerke Krefeld / Quantum
 - Add business constraints (CO2 emissions, etc.)
 - Add objective (maximize electricity revenue, minimize CO2 costs, etc.)
 - Solve!
+
+PS: `gurobi-ml` can now do this, but was not used here
 
 </div>
 
