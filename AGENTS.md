@@ -4,6 +4,7 @@
 - Pushing to `main` publishes immediately to the public GitHub Pages site. There is no staging branch.
 - The background (gradient angle, stops, step sizes) was tuned by hand with Daniel. Don't change it unless asked.
 - Colour rule: no pure reds or magentas anywhere. Use the CSS variables in `css/theme.css`. Roles: `--honey` for eyebrows, `h3` and links; `--cream` for titles and body; `--taupe` for subtitles; `--sand` for meta lines such as dates; `--burnt-orange` and `--amber` for small accents.
+- Prefer shared, general CSS rules and classes. Minimize slide-specific overrides; don't add a one-off per-slide rule if a shared one will do.
 - Slide building blocks in `slides.md` (not used on every slide):
   - `<!-- .slide: class="title-slide" -->` gives the left-weighted title layout. Pair it with `<p class="eyebrow">`, `# Title`, `<p class="subtitle">` and `<p class="meta">`.
   - `<div class="cols">` with two child `<div>`s makes a two-column layout. Leave blank lines inside the divs so the Markdown still renders.
