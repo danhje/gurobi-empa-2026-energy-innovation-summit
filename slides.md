@@ -90,7 +90,7 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 </div>
 <div>
 
-<img class="slide-image" src="assets/img/img-0708.jpg" alt="Photograph of the keynote title in the auditorium.">
+<img class="slide-image" src="assets/img/image-20.jpg" alt="Photograph of a projected slide showing TSO-DSO coordination at a glance.">
 
 </div>
 </div>
