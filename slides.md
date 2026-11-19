@@ -397,6 +397,35 @@ Olivier Megel, Alpiq
 
 ---
 
+<!-- .slide: class="content-slide eneco-slide compressed-2" data-session="d1-portfolio-intelligence" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">Market Layer</p>
+
+## Optimizing Value in Volatility: From Fragmented Decisions to Portfolio Intelligence
+
+<p class="speakers">
+Quinten de Wit, Eneco
+</p>
+
+- Eneco. Virtual power plant (VPP): wind, batteries, CHP, heat systems and boilers
+- VPPs often handled using multiple optimization models: one for trading, dispatch, scheduling, flexibility
+- Instead: portfolio intelligence
+- How? Digital twins + MILP
+- "The future of energy optimization may not be built on more models. It may be built on a better understanding of the portfolio as a whole."
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-31.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
 <!-- .slide: class="content-slide takeaways-slide" data-session="summary-takeaways" -->
 
 <p class="eyebrow">Summary</p>
