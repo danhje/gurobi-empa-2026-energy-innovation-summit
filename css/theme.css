@@ -557,6 +557,15 @@ body.program-sidebar-visible .reveal .slides section {
   background: none;
 }
 
+.reveal .r-stack {
+  width: 100%;
+  min-width: 0;
+}
+
+.reveal .r-stack > .slide-image {
+  max-width: 100%;
+}
+
 /* Let a mid-slide Questions eyebrow sit tighter under a lead line. */
 .reveal .cols .eyebrow {
   margin-top: 0.9em;

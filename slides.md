@@ -51,33 +51,10 @@
 </div>
 <div>
 
-<img class="slide-image" src="assets/img/optimization.jpg" alt="Optimization venn diagram">
-
+<div class="r-stack">
+<img class="slide-image fragment fade-out" data-fragment-index="0" src="assets/img/optimization.jpg" alt="Optimization venn diagram">
+<img class="slide-image fragment" data-fragment-index="0" src="assets/img/MILP-example.png" alt="MILP example">
 </div>
-</div>
-
----
-
-<!-- .slide: class="content-slide intro-slide" data-session="none" -->
-
-<div class="cols cols-media cols-media-portrait">
-<div>
-
-<!-- <p class="eyebrow">General</p> -->
-
-## Optimization?
-
-- ~Gradient methods~
-- ~Dynamic programming~
-- ~Bayesian optimization~
-- Mathematical programming / mathematical optimization
-
-
-</div>
-<div>
-
-<img class="slide-image" src="assets/img/MILP-example.png" alt="MILP example">
-
 
 </div>
 </div>

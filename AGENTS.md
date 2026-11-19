@@ -8,6 +8,7 @@
 - Slide building blocks in `slides.md` (not used on every slide):
   - `<!-- .slide: class="title-slide" -->` gives the left-weighted title layout. Pair it with `<p class="eyebrow">`, `# Title`, `<p class="subtitle">` and `<p class="meta">`.
   - `<div class="cols">` with two child `<div>`s makes a two-column layout. Leave blank lines inside the divs so the Markdown still renders.
+  - To cross-fade two right-hand images on click, put them in `<div class="r-stack">` in the media column: the first `class="slide-image fragment fade-out" data-fragment-index="0"`, the second `class="slide-image fragment" data-fragment-index="0"`.
   - Code blocks have a semi-transparent espresso background (`rgba(22, 13, 8, 0.78)`) so the background shows through. Keep that alpha roughly where it is.
   - Shaded backgrounds are for code blocks only. Don't put a filled or shaded background on text boxes, cards, or other slide content. A border or similar unfilled grouping is fine. The global espresso-and-amber deck background is separate and should not be changed unless asked.
   - Leave a little space between a slide heading and an info-box, and between an info-box and a following code block (margins on `.info-box` and on a `pre` after it). Don't pack them flush.
