@@ -186,6 +186,79 @@ Settlement: It's complicated …
 
 ---
 
+<!-- .slide: class="content-slide merit-order-slide compressed-2" data-session="d1-merit-order" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">Technology Layer</p>
+
+## From Spreadsheet Merit-Order to System-Wide Optimization
+
+<p class="speakers">
+Sebastian Angerhausen, Stadtwerke Krefeld / Quantum
+</p>
+
+<div>
+
+### Challenge
+
+- Optimize across energy types
+
+### Old process
+
+- Spreadsheets
+- Daily planning
+- Fixed internal heat prices per company per day: rational for each company ≠ best outcome for the system
+- Could not react to intraday price volatility
+- Could not represent interactions
+
+</div>
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-23.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
+<!-- .slide: class="content-slide merit-order-slide" -->
+
+<div class="cols cols-media">
+<div>
+
+<div>
+
+### New process
+
+- System-wide optimization
+- Quarter-hourly
+- Feeds into downstream trading
+
+### Input
+
+- Forecasts for prices and heat demand
+
+### MOSES
+
+- In-house optimization library
+- Mathematical Optimization for Simulation of Energy Systems
+
+</div>
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/image-24.jpg" alt="Photograph of a slide projected during the talk.">
+
+</div>
+</div>
+
+---
+
 <!-- .slide: class="content-slide surrogate-slide compressed-1" data-session="d1-surrogate-models" -->
 
 <div class="cols cols-media">

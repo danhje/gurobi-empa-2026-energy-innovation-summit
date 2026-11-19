@@ -620,3 +620,8 @@ body.program-sidebar-visible .reveal .slides section {
     padding-left: 6%;
   }
 }
+
+/* Space between a speakers line and the content box that follows it. */
+.reveal .speakers + div {
+  margin-top: 1em;
+}
