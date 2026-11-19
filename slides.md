@@ -237,11 +237,15 @@ Settlement: It's complicated …
 </div>
 
 ```plaintext
-                                                             Business constraints
-                                                                       v
-Simulation ---> Neural nets ---> Physical constraints ---> optimization of setpoints
-                                                                       ^
-                                                              Business objectives
+Simulation
+    v
+Neural nets
+    v
+Physical constraints
+    v
+optimization of setpoints <--- Business constraints
+    ^
+Business objectives
 ```
 
 </div>
