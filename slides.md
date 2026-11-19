@@ -22,7 +22,6 @@
 - Day 1: Energy first. Day 2: Optimization first.
 - 222 attendees (TSOs, utilities, BSPs, traders)
 - Framing: Volatility requires optimization. Opportunity, not just something to manage / tame.
-- Why? Need for fast decisions (e.g. dispatch).
 
 </div>
 <div>
@@ -61,7 +60,7 @@
 
 <!-- .slide: class="talk-title-slide" data-session="d1-welcome" -->
 
-<p class="eyebrow">Welcome</p>
+<!-- <p class="eyebrow">Welcome</p> -->
 
 # Welcome: Context Setting, Housekeeping, and Gurobi and Empa Team Presentation
 
@@ -69,10 +68,6 @@
 Tim Reintgen, Gurobi, Account Manager Power &amp; Utilities EME<br>
 Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 </p>
-
----
-
-<!-- .slide: class="content-slide" -->
 
 - Need to adapt to changes.
 - Interdisciplinary.

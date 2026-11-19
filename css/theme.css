@@ -228,7 +228,7 @@ body {
 
 .reveal ul {
   list-style: none;
-  margin: 0.2em 0 0;
+  margin: 1.5em 0 0;
   padding: 0;
 }
 
@@ -558,8 +558,6 @@ body.program-sidebar-visible .reveal .slides section {
   margin-top: 0.9em;
 }
 
-
-
 /* Takeaways: slightly tighter type so the longer bullets sit inside the frame. */
 .reveal .takeaways-slide {
   font-size: 0.88em;
@@ -629,30 +627,9 @@ body.program-sidebar-visible .reveal .slides section {
   font-size: 0.76em;
 }
 
-.reveal .surrogate-slide .cols.cols-media {
-  align-items: start;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-}
-
-.reveal .surrogate-slide .slide-image {
-  max-height: 15.5em;
-}
-
-.reveal .surrogate-slide h2 {
-  font-size: 1.2em;
-  margin-bottom: 0.6em;
-  max-width: none;
-  line-height: 1.15;
-}
-
 /* Unlinked intro slide: slightly tighter type so five points sit beside a portrait photo. */
 .reveal .intro-slide {
   font-size: 0.82em;
-}
-
-.reveal .intro-slide h2 {
-  font-size: 1.25em;
-  margin-bottom: 0.8em;
 }
 
 .reveal .intro-slide .cols.cols-media-portrait {
