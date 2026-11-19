@@ -179,15 +179,13 @@ body {
   margin-top: 0.95em;
 }
 
-/* Extra p selector keeps eyebrows/speakers immune to .compressed-N p font sizes. */
-.eyebrow,
-.reveal .slides p.eyebrow {
+.eyebrow {
   font-family: Poppins, Inter, sans-serif;
   font-size: 0.42em;
   font-weight: 600;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: var(--honey);
+  color: var(--cream);
   margin: 0 0 1.15em;
 }
 
@@ -521,8 +519,7 @@ body.program-sidebar-visible .reveal .slides section {
   line-height: 1.15;
 }
 
-.reveal .speakers,
-.reveal .slides p.speakers {
+.reveal .speakers {
   font-family: Inter, sans-serif;
   font-size: 0.52em;
   font-weight: 400;
@@ -640,4 +637,13 @@ body.program-sidebar-visible .reveal .slides section {
 /* Space between a speakers line and the content box that follows it. */
 .reveal .speakers + div {
   margin-top: 1em;
+}
+
+/* Keep eyebrow and speaker sizes immune to the .compressed-N p font sizes. */
+.reveal .slides p.eyebrow {
+  font-size: 0.42em;
+}
+
+.reveal .slides p.speakers {
+  font-size: 0.52em;
 }
