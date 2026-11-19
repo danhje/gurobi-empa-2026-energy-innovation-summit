@@ -166,7 +166,7 @@ body {
 
 .reveal h2 {
   font-size: 1.55em;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.95em;
 }
 
 .reveal h3 {
@@ -175,7 +175,7 @@ body {
   font-weight: 600;
   color: var(--honey);
   letter-spacing: 0.01em;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.8em;
 }
 
 .eyebrow {
@@ -567,11 +567,11 @@ body.program-sidebar-visible .reveal .slides section {
 
 .reveal .takeaways-slide h2 {
   font-size: 1.35em;
-  margin-bottom: 0.45em;
+  margin-bottom: 0.7em;
 }
 
 .reveal .takeaways-slide h3 {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.65em;
 }
 
 
@@ -594,7 +594,7 @@ body.program-sidebar-visible .reveal .slides section {
 }
 
 .reveal .info-box h3 {
-  margin: 0 0 0.8em;
+  margin: 0 0 1.05em;
 }
 
 .reveal .info-box ul {
@@ -640,7 +640,7 @@ body.program-sidebar-visible .reveal .slides section {
 
 .reveal .surrogate-slide h2 {
   font-size: 1.2em;
-  margin-bottom: 0.35em;
+  margin-bottom: 0.6em;
   max-width: none;
   line-height: 1.15;
 }
@@ -652,7 +652,7 @@ body.program-sidebar-visible .reveal .slides section {
 
 .reveal .intro-slide h2 {
   font-size: 1.25em;
-  margin-bottom: 0.55em;
+  margin-bottom: 0.8em;
 }
 
 .reveal .intro-slide .cols.cols-media-portrait {
