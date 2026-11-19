@@ -38,8 +38,6 @@
 <div class="cols cols-media cols-media-portrait">
 <div>
 
-<!-- <p class="eyebrow">General</p> -->
-
 ## Optimization?
 
 - ~Gradient methods~
@@ -63,8 +61,6 @@
 
 <!-- .slide: class="talk-title-slide" data-session="d1-welcome" -->
 
-<!-- <p class="eyebrow">Welcome</p> -->
-
 # Welcome: Context Setting, Housekeeping, and Gurobi and Empa Team Presentation
 
 <p class="speakers">
@@ -82,11 +78,9 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 <div class="cols cols-media">
 <div>
 
-<p class="eyebrow">Keynote</p>
-
 ## TSO-DSO Coordination: Unlocking Grid and System Value from Distributed Flexibility
 
-- Pilot project to show how TSO and DSOs can cooperate on utilizing decentralized flexibility.
+- Swissgrid-lead pilot project to show how TSO and DSOs can cooperate on utilizing decentralized flexibility.
 - Motivation:
   - Flexibility increasingly comes from decentralized energy resources. Batteries, PV, heat pumps, EVs.
   - Shared market
@@ -103,8 +97,6 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 
 <!-- .slide: class="content-slide tso-dso-slide" data-session="d1-tso-dso" -->
 
-<p class="eyebrow">Keynote</p>
-
 ## Refresher on how Norway does this (👌🧂)
 
 - DSOs purchase flexibility through EuroFlex on NODES platform. Only for congestions / voltage, not balance.
@@ -119,8 +111,6 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 <div class="cols cols-media">
 <div>
 
-<p class="eyebrow">Keynote</p>
-
 ## Market
 
 - One joint TSO-DSO flexibility market
@@ -130,8 +120,11 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
   - Power limitation (e.g. limit an EV bus charger to 10 kW even though it was pre-qualified as flex up to 25 kW)
 - Both products have activation and reservation markets (🤯)
 - Products can be linked (mutually exclusive)
-- DSOs define local market areas with: registered resources; interface node (transformer to transmission); neighbouring local areas; load flow sensitivities (LFS).
-
+- DSOs define local market areas with
+  - registered resources
+  - interface node (transformer to transmission)
+  - neighbouring local areas
+  - LFS - load flow sensitivities (to both interface node and neighbouring local areas (👌🧂))
 
 </div>
 <div>
@@ -145,8 +138,6 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 
 <!-- .slide: class="content-slide" -->
 
-<p class="eyebrow">Keynote</p>
-
 ## Clearing and optimization
 
 2-stage clearing:
@@ -157,7 +148,7 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 - Stage 2:
   - Increase/decrease requests from all SOs (TSO and DSOs) are matched with increase/decrease bids
   - Respects mutual exclusivity
-  - net position limits and the  between a resource's limitation bid and its opposite-direction increase/decrease bid.
+  - Respects net position limits
 
 Settlement: It's complicated …
 
@@ -165,7 +156,28 @@ Settlement: It's complicated …
 
 <!-- .slide: class="content-slide" -->
 
-<p class="eyebrow">Keynote</p>
+<div class="cols cols-media">
+<div>
+
+## Also: Optimizer autopilot
+
+- Still Swissgrid. Different project. Not using the new piloted markets.
+- AI monitors imbalance real-time and automatically procures flexibility across markets (mFRR and aFRR)
+- Operators only supervise
+- "Stochastic portfolio optimization"
+  - stochastic = using scenarios to account for uncertainty (👌🧂)
+  - portfolio optimization = multiple markets, trying to avoid price jumps in one market (👌🧂)
+
+</div>
+<div>
+<img class="slide-image" src="assets/img/optimizer-autopilot.png" alt="">
+</div>
+</div>
+
+---
+
+
+<!-- .slide: class="content-slide" -->
 
 ## Takeaways
 
@@ -174,7 +186,7 @@ Settlement: It's complicated …
 
 ---
 
-<!-- .slide: class="content-slide surrogate-slide" data-session="d1-surrogate-models" -->
+<!-- .slide: class="content-slide surrogate-slide compressed-1" data-session="d1-surrogate-models" -->
 
 <div class="cols cols-media">
 <div>
@@ -189,7 +201,7 @@ Settlement: It's complicated …
 
 - Optimize a larger plant / industrial site combining energy sources (CHP)
 - Complex relationships: steam, heat, power generation, fuel constraints, emission limits, etc.
-- Continuous optimal setpoints (fuel cost, electricity cost, steam demand, CO2 costs)
+- Continuously find optimal setpoints (fuel cost, electricity cost, steam demand, CO2 costs)
 - All modeled in a thermodynamic simulator
 - But: simulation too slow (a few seconds) for an optimization loop
 
@@ -205,12 +217,10 @@ Settlement: It's complicated …
 
 ---
 
-<!-- .slide: class="content-slide surrogate-slide" -->
+<!-- .slide: class="content-slide compressed-2" -->
 
 <div class="cols cols-media">
 <div>
-
-<p class="eyebrow">Technology Layer</p>
 
 <div>
 
@@ -249,9 +259,8 @@ Simulation ---> Neural nets ---> Physical constraints ---> optimization of setpo
 <div class="cols cols-media">
 <div>
 
-<p class="eyebrow">Technology Layer</p>
 
-<div class="info-box">
+<div>
 
 ### Free side effects
 

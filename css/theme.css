@@ -585,59 +585,20 @@ body.program-sidebar-visible .reveal .slides section {
   margin-bottom: 0.65em;
 }
 
-
-/* Problem / Solution grouping on talk slides.
-   Left honey accent only. A full rounded border still reads as a dark
-   filled panel against the espresso-to-amber gradient, even when the
-   box background is fully transparent. */
-.reveal .info-box {
-  background: transparent;
-  box-shadow: none;
-  border: none;
-  border-left: 3px solid var(--honey);
-  border-radius: 0;
-  padding: 0.15em 0 0.2em 0.7em;
-  margin: 0.7em 0 0;
+.reveal .compressed-1 ul {
+  font-size: 0.7em;
 }
 
-.reveal .info-box:last-child {
-  margin-bottom: 0;
+.reveal .compressed-1 h2 {
+  font-size: 1.35em;
 }
 
-.reveal .info-box h3 {
-  margin: 0 0 1.05em;
+.reveal .compressed-2 ul {
+  font-size: 0.65em;
 }
 
-.reveal .info-box ul {
-  margin: 0;
-}
-
-.reveal .info-box li {
-  line-height: 1.28;
-  margin: 0 0 0.22em;
-}
-
-.reveal .info-box pre,
-.reveal .cols pre {
-  max-width: 100%;
-  width: 100%;
-  margin: 0.55em 0 0;
-}
-
-.reveal .info-box + pre {
-  /* em is the smaller code font, so this is a modest slide-sized gap */
-  margin-top: 1.8em;
-}
-
-.reveal .info-box p {
-  margin: 0.45em 0 0.15em;
-  color: var(--honey);
-  font-family: Poppins, Inter, sans-serif;
-  font-weight: 600;
-}
-
-.reveal .surrogate-slide {
-  font-size: 0.76em;
+.reveal .compressed-2 h2 {
+  font-size: 1.2em;
 }
 
 /* Unlinked intro slide: slightly tighter type so five points sit beside a portrait photo. */
