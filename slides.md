@@ -58,6 +58,32 @@
 
 ---
 
+<!-- .slide: class="content-slide intro-slide" data-session="none" -->
+
+<div class="cols cols-media cols-media-portrait">
+<div>
+
+<!-- <p class="eyebrow">General</p> -->
+
+## Optimization?
+
+- ~Gradient methods~
+- ~Dynamic programming~
+- ~Bayesian optimization~
+- Mathematical programming / mathematical optimization
+
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/MILP-example.png" alt="MILP example">
+
+
+</div>
+</div>
+
+---
+
 <!-- .slide: class="talk-title-slide" data-session="d1-welcome" -->
 
 <!-- <p class="eyebrow">Welcome</p> -->
@@ -74,18 +100,19 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 
 ---
 
-<!-- .slide: class="content-slide" data-session="d1-tso-dso" -->
+<!-- .slide: class="content-slide tso-dso-slide" data-session="d1-tso-dso" -->
 
 <div class="cols cols-media">
 <div>
 
 <p class="eyebrow">Keynote</p>
 
-## Intro and motivation
+## TSO-DSO Coordination: Unlocking Grid and System Value from Distributed Flexibility
 
 - Pilot project to show how TSO and DSOs can cooperate on utilizing decentralized flexibility.
-- Project where DSO, TSO and BSPs look for opportunities to cooperate.
-- Motivation: Flexibility increasingly comes from decentralized energy resources. Batteries, PV, heat pumps, EVs.
+- Motivation:
+  - Flexibility increasingly comes from decentralized energy resources. Batteries, PV, heat pumps, EVs.
+  - Shared market
 
 </div>
 <div>
@@ -97,17 +124,47 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 
 ---
 
-<!-- .slide: class="content-slide" -->
+<!-- .slide: class="content-slide tso-dso-slide" data-session="d1-tso-dso" -->
 
 <p class="eyebrow">Keynote</p>
 
-## Market and touch points
+## Refresher on how Norway does this (👌🧂)
 
-- One joint TSO-DSO flexibility market.
-- Pay-as-bid preferred (!)
-- Two products: Power increase / decrease (completely new, mFRR-like); Power limitation (e.g. limit an EV bus charger to 10 kW even though it was pre-qualified as flex up to 25 kW).
-- Both products have activation and reservation markets (🤯). Products can be linked (mutually exclusive).
+- DSOs purchase flexibility through EuroFlex on NODES platform. Only for congestions / voltage, not balance.
+- Leftovers can be (automatically?) offered on the mFRR EAM market.
+- Nordic Libra uses mFRR only, not EuroFlex products
+- Statnett manages congestion in transmission and regional grid only (ABOT ignores constraints on components below a certain voltage level).
+
+---
+
+<!-- .slide: class="content-slide tso-dso-slide" data-session="d1-tso-dso" -->
+
+<div class="cols cols-media">
+<div>
+
+<p class="eyebrow">Keynote</p>
+
+## Market
+
+- One joint TSO-DSO flexibility market
+- Pay-as-bid preferred
+- Two products
+  - Power increase / decrease (completely new, mFRR-like)
+  - Power limitation (e.g. limit an EV bus charger to 10 kW even though it was pre-qualified as flex up to 25 kW)
+- Both products have activation and reservation markets (🤯)
+- Products can be linked (mutually exclusive)
 - DSOs define local market areas with: registered resources; interface node (transformer to transmission); neighbouring local areas; load flow sensitivities (LFS).
+
+
+</div>
+
+</div>
+<div>
+
+<img class="slide-image" src="assets/img/TSO-DSO-products.jpg" alt="">
+
+</div>
+</div>
 
 ---
 
@@ -117,12 +174,15 @@ Georgios Mavromatidis, Empa, Head of Urban Energy Systems Laboratory
 
 ## Clearing and optimization
 
-Optimization …
-
 2-stage clearing:
 
-- Stage 1: A DSO submits a limitation request at a specific connection point, and it's matched with limitation bids at that point. Only the limitation product is used here.
-- Stage 2: Increase/decrease requests from all SOs (TSO and DSOs) are matched with increase/decrease bids, respecting net position limits and the mutual exclusivity between a resource's limitation bid and its opposite-direction increase/decrease bid.
+- Stage 1:
+  - A DSO submits a limitation request at a specific connection point
+  - Matched with limitation bids at that point
+- Stage 2:
+  - Increase/decrease requests from all SOs (TSO and DSOs) are matched with increase/decrease bids
+  - Respects mutual exclusivity
+  - net position limits and the  between a resource's limitation bid and its opposite-direction increase/decrease bid.
 
 Settlement: It's complicated …
 
@@ -132,19 +192,12 @@ Settlement: It's complicated …
 
 <p class="eyebrow">Keynote</p>
 
-## Takeaways and refresher
+## Takeaways
 
-- Talk together! Create working groups (This was a direct encouragement from the presenter)
-- Keep it simple.
-
-"Refresher" on how Norway does this:
-
-- Statnett manages congestion in transmission and regional grid (ABOT ignores constraints on components below a certain voltage level).
-- DSOs purchase flexibility through EuroFlex on NODES platform.
-- Leftovers can be (automatically?) offered on the mFRR EAM market.
+- Talk together! Create working groups (direct encouragement from the presenter)
+- Keep it simple
 
 ---
-
 
 <!-- .slide: class="content-slide surrogate-slide" data-session="d1-surrogate-models" -->
 
@@ -155,7 +208,7 @@ Settlement: It's complicated …
 
 ## Embedded Surrogate Models for Real-Time Optimization of Industrial Energy Systems
 
-<div class="info-box">
+<div>
 
 ### Problem
 
@@ -184,7 +237,7 @@ Settlement: It's complicated …
 
 <p class="eyebrow">Technology Layer</p>
 
-<div class="info-box">
+<div>
 
 ### Solution
 
