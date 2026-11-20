@@ -410,11 +410,13 @@ Olivier Megel, Alpiq
 Quinten de Wit, Eneco
 </p>
 
-- Eneco. Virtual power plant (VPP): wind, batteries, CHP, heat systems and boilers
-- VPPs often handled using multiple optimization models: one for trading, dispatch, scheduling, flexibility
-- Instead: portfolio intelligence
+tl;dr: Portfolio intelligence > smart but separate optimization models
+
+- Eneco owns virtual power plants (VPP) (wind, batteries, CHP, heat systems and boilers)
+- VPPs often handled using multiple optimization models. One for trading. One for dispatch. One for scheduling. One for flexibility.
+- (Statnett: One for mFRR congestion management, one for aFRR congestion management, one for reserve acquisition)
+- Instead: Portfolio intelligence
 - How? Digital twins + MILP
-- "The future of energy optimization may not be built on more models. It may be built on a better understanding of the portfolio as a whole."
 
 </div>
 <div>
